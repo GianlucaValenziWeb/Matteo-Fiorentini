@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servizi di fisioterapia, osteopatia e riabilitazione a Roma. Ogni trattamento è personalizzato in base alle esigenze specifiche del paziente.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <title>Servizi | Dott. Matteo Fiorentini</title>
+
+    <meta name="keywords" content="rieducazione posturale, terapie strumentali, riabilitazione ortopedica, terapia manuale, fisioterpia sportiva, metodica vibropercussoria " />
+    <meta name="author" content="Dott. Matteo Fiorentini" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:title" content="Servizi | Dott. Matteo Fiorentini" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Servizi di fisioterapia, osteopatia e riabilitazione a Roma. Ogni trattamento è personalizzato in base alle esigenze specifiche del paziente." />
+    <meta property="og:url" content="https://www.tuosito.it" /> <!-- da cambiare una volta pubblicato -->
+    <meta property="og:site_name" content="tuosito"> <!-- da cambiare una volta pubblicato -->
+    <meta property="og:image" content="https://www.tuosito.it/images/matteo-fiorentini-osteopata-fisioterapista.webp" /><!-- da cambiare una volta pubblicato -->
+    <meta property="og:image:secure_url" content="https://www.tuosito.it/images/matteo-fiorentini-osteopata-fisioterapista.webp" /><!-- da cambiare una volta pubblicato -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Matteo fiorentini osteopata fisioterapista" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:updated_time" content="2025-04-01T00:00:00+02:00" />
+    <meta property="article:published_time" content="2025-04-11T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2025-04-16T00:00:00+02:00" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.tuosito.it" /> <!-- da cambiare una volta pubblicato -->
+
+    <!-- Link ai social -->
+    <link rel="me" href="https://www.facebook.com/matteo.fioMISTERentini.1?locale=it_IT" />
+    <link rel="me" href="https://www.instagram.com/ma_fiorentini/" />
+    <link rel="me" href="https://www.linkedin.com/in/matteo-fiorentini-7a668713b/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dott. Matteo Fiorentini">
+    <meta name="twitter:description"
+        content="Fisioterapista e osteopata a Roma. Trattamenti per dolori, postura, infortuni sportivi e altro ancora. Soluzioni su misura per ogni paziente e atleta.">
+    <meta name="twitter:image" content="https://www.tuosito.it/images/matteo-fiorentini-osteopata-fisioterapista.webp"> <!-- da cambiare una volta pubblicato -->
+
+    <!-- CSS + Favicon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="images/logo-matteo-fiorentini.png">
+
+    <!-- Link icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body .navbar a[href="services.html"] {
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #fff;
+        }
+
+        .container-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            row-gap: 80px;
+            column-gap: 40px;
+            margin-top: 20px;
+        }
+
+        .service {
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .service-text {
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .service-text h3 {
+            margin: 7px 0;
+        }
+
+        .service-text p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <input type="checkbox" id="check">
+
+        <div class="navbar-left">
+            <a href="index.html">
+                <img src="images/logo-matteo-fiorentini.png" alt="matteo fiorentini" loading="eager" decoding="sync">
+            </a>
+
+            <a href="index.html" class="container-brand">
+                <span class="brand-name">Matteo Fiorentini</span>
+                <span class="brand-job">osteopatia - fisioterapia</span>
+            </a>
+        </div>
+
+
+        <nav class="navbar-center">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Chi sono</a>
+            <a href="services.html">Servizi</a>
+            <a href="index.html#reviews">Recensioni</a>
+            <a href="faq.html">Faq</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+        <div class="navbar-right">
+            <a href="contact.html" class="contact">contatti</a>
+        </div>
+
+        <label for="check" class="nav-toggle" id="open-menu">
+            <i class='bx bx-menu'></i>
+        </label>
+
+        <div class="menu">
+            <label for="check" class="nav-toggle close-menu">
+                <i class='bx bx-x'></i>
+            </label>
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Chi sono</a>
+                <a href="services.html">Servizi</a>
+                <a href="index.html#reviews">Recensioni</a>
+                <a href="faq.html">Faq</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" id="contact-menu">Contatti</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Immagine di copertina -->
+    <div class="header-image">
+        <img src="images/servizi.webp" width="100%" height="100%" style="object-fit: cover;"
+            alt="pagina servizi di fiorentini matteo" loading="eager" decoding="sync" srcset="">
+        <div class="overlay"></div>
+        <h2 class="header-text">Servizi</h2>
+        <a href="#services">
+            <i class='bx bx-down-arrow-alt'></i>
+        </a>
+    </div>
+
+    <!-- servizi -->
+    <section id="services">
+        <h2 style="color: var(--color3);">In che modo posso aiutarti?</h2>
+        <p style="padding: 20px 0 30px 0;">Offro trattamenti fisioterapici personalizzati per il recupero da
+            infortuni, la gestione
+            del dolore e il miglioramento della mobilità. Ogni terapia è mirata a ristabilire il benessere e la
+            funzionalità del corpo, prevenendo futuri problemi.</p>
+        <div class="container-services">
+            <div class="service">
+                <div class="service-img">
+                    <img src="images/rieducazione-posturale.webp"
+                        alt="il dott. matteo fiorentini durante una visita di rieducazione posturale" loading="lazy"
+                        decoding="async" srcset="">
+                </div>
+                <div class="service-text">
+                    <h3>Rieducazione Posturale</h3>
+                    <a class="reservation" href="contact.html">Prenota una visita</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-img">
+                    <img src="images/terapia-strumentale.webp"
+                        alt="il dott. matteo fiorentini durante una visita di terapie strumentali" loading="lazy"
+                        decoding="async" srcset="">
+                </div>
+                <div class="service-text">
+                    <h3>Terapie Strumentali</h3>
+                    <a class="reservation" href="contact.html">Prenota una visita</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-img">
+                    <img src="images/riabilitazione-ortopedica.webp"
+                        alt="il dott. matteo fiorentini durante una visita di riabilitazione ortopedica" loading="lazy"
+                        decoding="async" srcset="">
+                </div>
+                <div class="service-text">
+                    <h3>Riabilitazione Ortopedica</h3>
+                    <a class="reservation" href="contact.html">Prenota una visita</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-img">
+                    <img src="images/terapia-manuale-visita.webp"
+                        alt="il dott. matteo fiorentini durante una visita di terapia manuale" loading="lazy"
+                        decoding="async" srcset="">
+                </div>
+                <div class="service-text">
+                    <h3>Terapia Manuale</h3>
+                    <a class="reservation" href="contact.html">Prenota una visita</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-img">
+                    <img src="images/fisioterapia-sportiva-visita.webp"
+                        alt="il dott. matteo fiorentini durante una visita di fisioterapia-sportiva" loading="lazy"
+                        decoding="async" srcset="">
+                </div>
+                <div class="service-text">
+                    <h3>Fisioterapia Sportiva</h3>
+                    <a class="reservation" href="contact.html">Prenota una visita</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-img">
+                    <img src="images/metodica-vibropercussoria.webp"
+                        alt="il dott. matteo fiorentini durante una visita di metodica vibropercussoria" loading="lazy"
+                        decoding="async" srcset="">
+                </div>
+                <div class="service-text">
+                    <h3>Metodica Vibropercussoria</h3>
+                    <a class="reservation" href="contact.html">Prenota una visita</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- break-footer -->
+    <section id="break-footer-section">
+        <div class="break-footer-content">
+            <div class="break-footer-text">
+                <div class="sub-title" id="sub-title-white">Il tuo benessere inizia da qui.</div>
+                <h2>Contattami per un trattamento personalizzato!</h2>
+            </div>
+            <div class="break-footer-buttons">
+                <a href="index.html" class="btn btn-left">torna alla home</a>
+                <a href="contact.html" class="btn btn-right">Contattami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Menu Destra -->
+            <div class="footer-section">
+                <h4>Menu</h4>
+                <div class="menu-columns" id="menu-columns-service">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Chi sono</a></li>
+                        <li><a href="services.html">Servizi</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#reviews">Recensioni</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-miodott">
+                    <div href="" class="container-mydoctor">
+                        <div class="mydoctor-content">
+                            <img src="images/matteo-fiorentini-footer.webp" id="mydoctor-matteo"
+                                alt="prenota una visita con matteo fiorentini" loading="lazy" decoding="async">
+                            <div class="container-mydoctor-text">
+                                <span>Dott. Matteo Fiorentini<i style="margin-left: 5px;"
+                                        class='bx bxs-check-circle'></i></span>
+                                <div>Osteopata, fisioterapista</div>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn-mydoctor">prenota una visita
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Menu Sinistra -->
+            <div class="footer-section">
+                <h4>Servizi</h4>
+                <div class="menu-columns">
+                    <ul class="ul-services">
+                        <li><a href="services.html#services">Riabilitazione ortopedica</a></li>
+                        <li><a href="services.html#services">Fisioterapia sportiva</a></li>
+                        <li><a href="services.html#services">Terapia manuale</a></li>
+                        <li><a href="services.html#services">Rieducazione posturale</a></li>
+                        <li><a href="services.html#services">Terapie strumentali</a></li>
+                        <li><a href="services.html#services">Metodica vibropercussoria</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contatti Centro -->
+            <div class="footer-section">
+                <h4>Contatti</h4>
+                <div class="footer-contact">
+                    <div class="contact-link">
+                        <i class='bx bxs-location-plus'></i><a href="">cinecittà est</a>
+                    </div>
+                    <div class="contact-link">
+                        <i class='bx bxs-phone'></i><a href="tel: +39 328 128 5060">328 128 5060</a>
+                    </div>
+                    <div class="contact-link">
+                        <i id="contact-link-email-i-normal" class='bx bxs-envelope'></i><a
+                            id="contact-link-email-a-normal"
+                            href="mailto: fiorentinimatteo87@gmail.com">fiorentinimatteo87@gmail.com</a>
+                        <i id="contact-link-email-i" style="display: none;" class='bx bxs-envelope'></i><a
+                            id="contact-link-email-a" style="display: none;"
+                            href="mailto: fiorentinimatteo87@gmail.com">fiorentinimatteo <br> 87@gmail.com</a>
+                    </div>
+                    <div class="contact-link">
+                        <i class='bx bxs-id-card'></i><a href="">P. IVA 14219991008</a>
+                    </div>
+                </div>
+                <h4 id="title-social">Seguimi su:</h4>
+                <div class="container-social">
+                    <a href="https://www.facebook.com/matteo.fioMISTERentini.1?locale=it_IT" target="_blank"
+                        aria-label="Visita il profilo Facebook di matteo fiorentini" aria-hidden="true"><i
+                            class='bx bxl-facebook' id="facebook"></i></a>
+                    <a href="https://www.instagram.com/ma_fiorentini/" target="_blank"
+                        aria-label="Visita il profilo instagram di matteo fiorentini" aria-hidden="true"><i
+                            class='bx bxl-instagram' id="insta"></i></a>
+                    <a href="https://www.linkedin.com/in/matteo-fiorentini-7a668713b/" target="_blank"
+                        aria-label="Visita il profilo linkedin di matteo fiorentini" aria-hidden="true"><i
+                            class='bx bxl-linkedin' id="linkedin"></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="images/logo-matteo-fiorentini.png" alt="matteo fiorentini" loading="lazy" decoding="async">
+                <div class="footer-logo-text">
+                    <span id="footer-name">Matteo Fiorentini</span>
+                    <span id="footer-job">osteopatia - fisioterapia</span>
+                </div>
+            </div>
+            <div class="footer-text">
+                <span style="font-size: 1rem;">2025 &copy; Matteo Fiorentini. Tutti i diritti riservati.</span> <br>
+                <span style="font-size: 1rem;">Realizzato da <a href="https://www.gianlucavalenzi.com/"
+                        target="_blank">Gianluca Valenzi</a></span> <br>
+                <a href="privacy.html">Privacy policy</a>
+                <a href="cookie.html">Cookie policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="arrow-up"><i class='bx bx-chevron-up'></i></a>
+</body>
+<script src="script.js"></script>
+
+</html>

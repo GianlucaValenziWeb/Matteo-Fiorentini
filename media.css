@@ -1,0 +1,1046 @@
+/* MEDIA GENERALI */
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .sub-title {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+}
+
+
+/* MEDIA GENERALI */
+@media (max-width: 900px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .sub-title {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+}
+
+/* MEDIA GENERALI */
+@media (max-width: 500px) {
+    .sub-title {
+        font-size: 1rem;
+    }
+}
+
+/* MEDIA GENERALI */
+@media (max-width: 300px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* MEDIA TABLET */
+@media (max-width: 1200px) {
+
+    /* --- HEADER --- */
+    .navbar {
+        padding: 10px 50px;
+    }
+
+    .navbar-left {
+        gap: 2px;
+    }
+
+    .navbar-center {
+        gap: 15px;
+    }
+
+    /* --- CHI SONO --- */
+    #profile {
+        padding: 40px 50px;
+    }
+
+    .profile-name {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        margin: 10px 0;
+    }
+
+    /* --- SERVIZI --- */
+    #services {
+        padding: 40px 50px;
+    }
+
+    .physio-image {
+        margin: 0 30px;
+        width: 310px;
+        height: 240px;
+    }
+
+    .service-box {
+        gap: 20px;
+    }
+
+    .service {
+        padding: 12px;
+    }
+
+    .services-container {
+        margin-top: 20px;
+    }
+
+    .cta-button {
+        margin-top: 30px;
+    }
+
+    /* --- BREAK --- */
+    #break {
+        padding: 40px 50px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+    }
+
+    /* --- RECENSIONI --- */
+    #reviews {
+        padding: 40px 50px;
+    }
+
+    .review-slide {
+        padding: 10px 40px;
+      }
+
+    /* --- FAQ --- */
+    #faq {
+        padding: 40px 50px !important;
+    }
+
+    /* --- BLOG --- */
+    #blog {
+        padding: 60px 50px;
+    }
+
+    /* --- PRE FOOTER -- */
+    .break-footer-content {
+        padding: 40px 50px;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 30px 50px;
+    }
+
+    .footer-contact {
+        padding: 0;
+    }
+
+    .menu-columns .ul-services li {
+        list-style: none;
+    }
+
+    .footer-section {
+        min-width: none;
+        width: 100%;
+    }
+
+    .footer-section ul li a {
+        font-size: 0.95rem;
+    }
+
+    .footer-section p,
+    a {
+        font-size: 0.95rem;
+    }
+
+    /* --- PAGINE ESTERNE HEADER IMAGE --- */
+    .header-text {
+        font-size: 1.6rem;
+    }
+
+    /* --- PAGINE ESTERNE CONTATTI --- */
+    #contact {
+        padding: 80px 50px !important;
+    }
+
+    /* --- PAGINE ESTERNE ANCA --- */
+    #article-1 {
+        padding: 80px 50px !important;
+    }
+}
+
+/* MEDIA TABLET - TELEFONO */
+@media (max-width: 900px) {
+
+    /* --- HEADER --- */
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .navbar-left img {
+        height: 40px !important;
+    }
+
+    .navbar-center,
+    .navbar-right {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        right: 30px;
+    }
+
+    .nav-toggle i {
+        font-size: 2.5rem;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 60px;
+        z-index: 2000;
+        backdrop-filter: blur(16px);
+        background-color: #ffffffd5;
+        transition: right 0.4s ease-in;
+    }
+
+    .menu a {
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 16px 10px;
+    }
+
+    /* --- CHI SONO --- */
+    #profile {
+        padding: 80px 30px;
+    }
+
+    .highlight {
+        font-size: 0.9rem !important;
+    }
+
+    .profile-name {
+        font-size: 1rem;
+    }
+
+    .btn-plus {
+        font-size: 0.9rem;
+    }
+
+    .profile-section.reverse {
+        flex-direction: column-reverse;
+    }
+
+    #profile-section-home {
+        flex-direction: column-reverse;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container-img {
+        width: 100%;
+    }
+
+    .background-box {
+        width: 100%;
+    }
+
+    .profile-image img {
+        width: 100%
+    }
+
+    /* --- SPECIALIZZAZIONI --- */
+    #container-specializations {
+        margin-top: 20px;
+    }
+
+    #container-specializations .subtitle {
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    .specializations {
+        height: 340px;
+        padding: 0;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .card-wrapped {
+        margin: 40px -12px 10px;
+    }
+
+    .card-wrapped .swiper-slide-button {
+        display: none;
+    }
+
+    .specializations-box img {
+        width: 50px;
+    }
+
+    /* --- SERVIZI --- */
+    #services {
+        padding: 80px 30px;
+    }
+
+    .services-p {
+        text-align: center;
+    }
+
+    .services-container .right {
+        margin-top: 30px;
+    }
+
+    .service-box {
+        max-width: 100%;
+        flex: none;
+        width: 100%;
+    }
+
+    .container-center {
+        order: -1;
+        width: 100%;
+        margin: 40px 0 50px 0;
+    }
+
+    .cta-button {
+        display: none;
+    }
+
+    .cta-button-responsive {
+        display: block;
+        width: 100%;
+    }
+
+    .physio-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .physio-image img {
+        height: 250px;
+        object-fit: contain;
+    }
+
+    /* background di sinistra  */
+    #service-blue::before,
+    #service-orange::before,
+    #service-green::before {
+        display: none;
+    }
+
+    /* background di destra  */
+    #service-red::before,
+    #service-yellow::before,
+    #service-purple::before {
+        display: none;
+    }
+
+    /* colore di sinistra  */
+    #service-blue::after,
+    #service-orange::after,
+    #service-green::after {
+        display: none;
+    }
+
+    /* colore di destra  */
+    #service-red::after,
+    #service-yellow::after,
+    #service-purple::after {
+        display: none;
+    }
+
+    .cta-button-responsive {
+        padding: 3px 10px;
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    /* --- BREAK --- */
+    #break {
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+
+    .break-content h2 {
+        font-size: 1.2rem;
+        line-height: normal !important;
+    }
+
+    .break-image img {
+        max-width: none;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .break-image {
+        width: 100%;
+    }
+
+    #break .buttons {
+        justify-content: flex-start !important;
+        align-items: center !important;
+    } 
+
+    /* --- RECENSIONI --- */
+    #reviews {
+        padding: 80px 20px 0
+    }
+
+    .reviews-container {
+        padding: 20px 0;
+    }
+
+    .review-text {
+        font-size: 0.9rem;
+    }
+
+    .disease-image {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 0;
+    }
+
+    /* --- FAQ --- */
+    #faq {
+        padding: 80px 30px !important;
+    }
+
+    .faq-question span {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+
+    /* --- BLOG --- */
+    #blog {
+        padding: 80px 30px;
+    }
+
+    .blog-card .title h3 {
+        font-size: 1.3rem;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        row-gap: 50px;
+    }
+
+    /* --- PRE FOOTER -- */
+    .break-footer-content {
+        padding: 40px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .break-footer-buttons {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .break-footer-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .break-footer-buttons .btn {
+        font-size: 0.7rem;
+        padding: 8px 14px;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 30px 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .footer-section {
+        border-right: none;
+        border-bottom: 1px solid var(--color2);
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .menu-columns {
+        justify-content: center;
+    }
+
+    .mydoctor-content {
+        justify-content: center;
+    }
+
+    .container-mydoctor {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-mydoctor {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .menu-columns .ul-services li {
+        list-style: circle;
+    }
+
+    .footer-contact {
+        align-items: center;
+    }
+
+    #contact-link-email-i {
+        display: block !important;
+    }
+
+    #contact-link-email-a {
+        display: block !important;
+    }
+
+    #contact-link-email-i-normal {
+        display: none !important;
+    }
+
+    #contact-link-email-a-normal {
+        display: none !important;
+    }
+
+    .container-social {
+        gap: 22px;
+    }
+
+    .container-social i {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
+
+    .footer-logo img {
+        width: 45px;
+    }
+
+    .footer-logo-text #footer-name {
+        font-size: 1.02rem;
+    }
+
+    .footer-logo-text #footer-job {
+        font-size: 0.9rem;
+    }
+
+    /* --- PAGINE ESTERNE HEADER IMAGE --- */
+    .header-text {
+        font-size: 1.3rem;
+    }
+
+    .header-image {
+        height: 300px;
+    }
+
+    /* --- PAGINE ESTERNE SERVICES --- */
+    .service-text h3 {
+        margin: 0;
+    }
+
+    .reservation {
+        font-size: 0.9rem;
+        padding: 2px 8px;
+        margin-top: 8px;
+    }
+
+    .container-services {
+        row-gap: 50px !important;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    }
+
+    /* --- PAGINE ESTERNE CONTATTI --- */
+    #contact {
+        padding: 80px 30px !important;
+    }
+
+    .container-contact {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    }
+
+    .container-contact-social {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    }
+
+    /* --- PAGINE ESTERNE ANCA --- */
+    #article-1 {
+        padding: 80px 30px !important;
+    }
+
+    #article-1 img {
+        height: 400px !important;
+    }
+
+    .container-p ul li {
+        font-size: 15.6px !important;
+    }
+}
+
+/* --- SPECIALIZZAZIONI --- */
+@media screen and (max-width: 780px) {
+    .specializations {
+        height: 300px;
+    }
+}
+
+/* MEDIA TELEFONO */
+@media (max-width: 500px) {
+
+    /* --- HEADER --- */
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-toggle {
+        right: 20px;
+    }
+
+    .brand-name {
+        display: none;
+        font-size: 1.03rem;
+    }
+
+    .brand-job {
+        display: none;
+        font-size: 0.85rem;
+        letter-spacing: 0;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    /* --- HOME --- */
+    .image-container {
+        display: none;
+    }
+
+    #home {
+        height: 100%;
+    }
+
+    .hero {
+        padding: 20px 20px 0px;
+        justify-content: center;
+        flex-direction: column;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        margin: 8px 0;
+        line-height: 35px;
+        font-size: 1.4rem !important;
+        word-spacing: normal;
+    }
+
+    .question {
+        font-size: 0.9rem !important;
+        margin-bottom: 5px;
+    }
+
+    .comment {
+        line-height: normal;
+        font-size: 0.9rem;
+        margin: 8px 0;
+    }
+
+    .logos {
+        /* flex-direction: column; */
+        /* width: 100px; */
+        width: 100%;
+        margin-top: 5px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos img {
+        width: 80px;
+    }
+
+    .buttons {
+        margin: 15px 0 !important;
+        /* display: none !important; */
+        gap: 8px !important;
+        margin-bottom: 50px;
+        flex-direction: none !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        text-align: center;
+        width: 160px !important;
+        padding: 4px 8px !important;
+        font-size: 0.7rem !important;
+    }
+
+    .container-img-responsive {
+        display: block !important;
+        margin-top: 5px;
+        width: auto;
+        height: 300px;
+    }
+
+    .container-img-responsive img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* --- CHI SONO --- */
+    #profile {
+        padding: 80px 20px 30px;
+    }
+
+    .container-img {
+        height: 300px;
+    }
+
+    .background-box {
+        height: 300px;
+    }
+
+    .profile-image img {
+        height: 300px;
+    }
+
+    .badge {
+        top: 16px;
+        left: 10px;
+    }
+
+    .badge img {
+        width: 110px;
+    }
+
+    /* --- SERVIZI --- */
+    #services {
+        padding: 80px 20px;
+    }
+
+    .cta-button-responsive {
+        padding: 3px 8px;
+        font-size: 0.9rem;
+    }
+
+    /* --- BREAK --- */
+    #break {
+        padding: 40px 20px;
+    }
+
+    .break-content h2 {
+        line-height: 30px !important;
+    }
+
+    #break .buttons {
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+
+    /* --- RECENSIONI --- */
+    #reviews {
+        padding: 80px 20px 0
+    }
+
+    #reviews .right {
+        /* right: -30px; */
+        display: none;
+    }
+
+    #reviews .left {
+        /* left: -30px; */
+        display: none;
+    }
+
+    .review-author {
+        font-size: 1.1rem;
+    }
+
+    .stars {
+        font-size: 25px;
+    }
+
+    .google {
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+
+    .reviews-container {
+        width: 100% !important;
+    }
+
+    .review-slide {
+        padding: 10px 10px;
+    }
+
+    .dots-container {
+        display: flex !important;
+    }
+
+    /* --- FAQ --- */
+    #faq {
+        padding: 80px 20px !important;
+    }
+
+    #blog {
+        padding: 80px 20px;
+    }
+
+    .blog-image {
+        height: 300px;
+    }
+
+    .date {
+        padding: 3px 8px;
+    }
+
+    .date #number {
+        font-size: 1.6rem;
+    }
+
+    .blog-card .title h3 {
+        font-size: 1.2rem;
+    }
+
+    .blog-card .title a {
+        font-weight: bold;
+        color: var(--color3);
+    }
+
+    /* --- PRE FOOTER -- */
+
+    .break-footer-content {
+        padding: 40px 20px;
+    }
+
+    .break-footer-content .break-footer-buttons {
+        gap: 8px !important;
+        flex-direction: row;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 30px 20px;
+    }
+
+    .mydoctor-content {
+        justify-content: initial;
+    }
+
+    .btn-mydoctor {
+        width: 100%;
+        font-size: 0.9rem;
+        letter-spacing: normal;
+        padding: 2px 0;
+    }
+
+    .container-mydoctor span,
+    .container-mydoctor div {
+        font-size: 0.9rem;
+        margin-bottom: 3px;
+    }
+
+    #title-social {
+        margin-top: 25px;
+    }
+
+    .container-mydoctor-text .stars {
+        margin-top: 0;
+    }
+
+    .container-mydoctor i {
+        font-size: 16px;
+    }
+
+    /* --- PAGINE ESTERNE HEADER IMAGE --- */
+    .header-text {
+        font-size: 1.2rem;
+    }
+
+    .header-image {
+        height: 280px;
+    }
+
+    .header-image i {
+        font-size: 1.5rem;
+    }
+
+    /* --- PAGINE ESTERNE CONTATTI --- */
+    #contact {
+        padding: 80px 20px !important;
+    }
+
+    .contact-box {
+        padding: 15px !important;
+    }
+
+    /* --- PAGINE ESTERNE ANCA --- */
+    #article-1 {
+        padding: 80px 20px !important;
+    }
+
+    #article-1 img {
+        height: 300px !important;
+    }
+
+    #article-1 span {
+        font-size: 0.9rem !important;
+    }
+
+    #article-1 #span-br-normal {
+        display: none !important;
+    }
+
+    #article-1 #span-br {
+        display: block !important;
+        text-align: center;
+    }
+
+}
+
+
+/* --- HOME --- */
+@media (max-width: 367px) {
+    .hero {
+        padding: 25px 20px 0;
+    }
+
+    .hero-content h1 {
+        line-height: 30px;
+        font-size: 1.3rem !important;
+    }
+
+    .buttons {
+        flex-direction: column !important;
+    }
+
+    #break .buttons {
+        justify-content: left !important;
+        align-items: flex-start !important;
+    }
+
+    .logos img {
+        width: 65px;
+    }
+
+    .container-img-responsive {
+        height: 275px;
+    }
+
+    .break-footer-content .break-footer-buttons {
+        flex-direction: column;
+    }
+}
+
+/* MEDIA TELEFONO PICCOLO */
+@media (max-width: 310px) {
+
+    /* --- CHI SONO --- */
+    #profile {
+        padding: 50px 10px;
+    }
+
+    .container-img {
+        height: 240px;
+    }
+
+    .background-box {
+        height: 240px;
+    }
+
+    .profile-image img {
+        height: 240px;
+    }
+
+    /* --- SPECIALIZZAZIONI --- */
+    .specializations {
+        height: 400px;
+    }
+
+    .reservation {
+        padding: 3px 8px;
+        font-size: 0.9rem;
+    }
+
+    /* --- SERVIZI --- */
+    .physio-image {
+        height: 180px;
+    }
+
+    .physio-image img {
+        height: 220px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* --- RECENSIONI --- */
+    #reviews .right,
+    #revies .left {
+        display: none;
+    }
+
+    .reviews-container {
+        width: 100%;
+    }
+
+    /* --- PAGINE ESTERNE CONTATTI --- */
+    #p-br-normal {
+        display: none;
+    }
+
+    #p-br {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .container-contact,
+    .container-contact-social {
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)) !important;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)) !important;
+    }
+}
