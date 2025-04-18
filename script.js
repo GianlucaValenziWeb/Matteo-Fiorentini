@@ -19,9 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
 //  NAVBAR INIZIALMENTE HA IL COLORE DELLO SFONDO, APPENA SI CROLLA GIU HA UN BACKGROUND BIANCO
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar");

@@ -45,7 +45,49 @@
     }
 }
 
+@media(max-width:1470px) {
+    .image-container {
+        height: 80vh;
+    }
+}
 
+@media(max-width:1370px) {
+    #home {
+        height: 100%;
+    }
+
+    .hero {
+        align-items: flex-end;
+        min-height: initial;
+        padding: 100px 120px 0;
+    }
+
+    .hero-content h1 {
+        line-height: normal;
+        font-size: 2.2rem !important;
+    }
+
+    .hero-content {
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .image-container-2 {
+        display: block !important;
+        height: 500px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .image-container-2 img {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 /* MEDIA TABLET */
 @media (max-width: 1200px) {
@@ -61,6 +103,36 @@
 
     .navbar-center {
         gap: 15px;
+    }
+
+    /* --- HOME --- */
+    .hero {
+        padding: 100px 50px 0;
+    }
+
+    .image-container-2 {
+        height: 400px !important;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 20px;
+    }
+
+    .logos {
+        gap: 10px;
+        width: 110px;
+    }
+
+    .question {
+        font-size: 1.1rem !important;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem !important;
     }
 
     /* --- CHI SONO --- */
@@ -119,7 +191,7 @@
 
     .review-slide {
         padding: 10px 40px;
-      }
+    }
 
     /* --- FAQ --- */
     #faq {
@@ -189,6 +261,7 @@
 
     .navbar-left img {
         height: 40px !important;
+        width: 100% !important;
     }
 
     .navbar-center,
@@ -229,6 +302,74 @@
         text-transform: uppercase;
         font-size: 1rem;
         padding: 16px 10px;
+    }
+
+    /* --- HOME --- */
+    .hero {
+        padding: 30px 30px 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .hero-content h1 {
+        margin: 20px 0;
+        line-height: 35px;
+        font-size: 1.8rem !important;
+        word-spacing: normal;
+    }
+
+    .question {
+        font-size: 1rem !important;
+        margin-bottom: 5px;
+    }
+
+    .comment {
+        line-height: normal;
+    }
+
+    .logos {
+        width: 100%;
+        margin-top: 5px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos img {
+        width: 105px;
+
+    }
+
+    .buttons {
+        flex-direction: none !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .image-container-2 {
+        display: none !important;
+    }
+
+    .container-img-responsive {
+        display: block !important;
+        height: 380px;
+    }
+
+    .container-img-responsive img {
+        height: 100%;
+        width: 100%;
     }
 
     /* --- CHI SONO --- */
@@ -290,7 +431,7 @@
 
     .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
     .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .card-wrapped {
-        margin: 40px -12px 10px;
+        margin: 40px 0px 10px;
     }
 
     .card-wrapped .swiper-slide-button {
@@ -403,7 +544,7 @@
     #break .buttons {
         justify-content: flex-start !important;
         align-items: center !important;
-    } 
+    }
 
     /* --- RECENSIONI --- */
     #reviews {
@@ -547,6 +688,7 @@
 
     .footer-logo img {
         width: 45px;
+        height: 100%;
     }
 
     .footer-logo-text #footer-name {
@@ -683,8 +825,6 @@
     }
 
     .logos {
-        /* flex-direction: column; */
-        /* width: 100px; */
         width: 100%;
         margin-top: 5px;
         gap: 10px;
@@ -748,7 +888,8 @@
     }
 
     .badge img {
-        width: 110px;
+        width: 110px !important;
+        height: 100% !important;
     }
 
     /* --- SERVIZI --- */
