@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
+    /* color: #5eaa93; */
+    /* color: #08825f; */
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -13,6 +15,7 @@
     --navcolor: #3a3a3a;
     --color2: #464646;
     --color3: #02bca0;
+    --color3: #10a891;
     --color-button: #3c8996;
     --hover-color-left: #32727d;
     --hover-color-right: #02a18a;
@@ -105,9 +108,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 120px;
-    height: 60px;
-    background-color: #fff;
+    padding: 0px 120px;
+    background-color: #ffffff;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -124,7 +126,7 @@ header {
 }
 
 .navbar-left img {
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .container-brand {
@@ -132,7 +134,7 @@ header {
     flex-direction: column !important;
 }
 
-.brand-name {
+/* .brand-name {
     font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -146,15 +148,16 @@ header {
     font-weight: bold;
     letter-spacing: 0.1px;
     color: var(--color3);
-}
+} */
 
 .navbar-center {
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .navbar-center a {
     color: var(--navcolor);
+    font-size: 1.1rem;
 }
 
 .navbar-center a:hover {
@@ -162,12 +165,14 @@ header {
 }
 
 .navbar-right .contact {
-    padding: 8px 16px;
+    padding: 12px 18px;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 5px;
     border: none;
     background-color: var(--color3);
     color: #fff;
+    font-size: 1.05rem;
+    text-transform: uppercase;
 }
 
 .navbar-right .contact:hover {
@@ -241,7 +246,7 @@ header {
     position: relative;
     z-index: 1;
     background-color: var(--background-color1);
-    background: radial-gradient(circle at bottom right, #dddddd, #f6f6f6);
+    background: radial-gradient(circle at bottom right, #cdcdcd, #f6f6f6);
 }
 
 
@@ -280,15 +285,21 @@ header {
     margin-bottom: 30px;
 }
 
-.buttons {
+#home .buttons {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
 
+#break .buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
 .btn {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 12px 22px;
     font-size: 1rem;
     border-radius: 5px;
     font-weight: bold;
@@ -332,7 +343,7 @@ header {
     bottom: 0;
     right: 70px;
     width: auto;
-    height: 93.5vh;
+    height: 92.5vh;
 }
 
 .img-matteo {
@@ -342,7 +353,7 @@ header {
 
 /* ------------------------------------------------------- CHI SONO --------------------------------------------------- */
 #profile {
-    padding: 80px 120px;
+    padding: 120px;
     background-color: var(--background-color2);
 }
 
@@ -412,10 +423,15 @@ header {
 
 .btn-plus {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
-    font-weight: 500;
+    font-weight: 800;
     color: var(--color3);
+    border: 2px solid var(--color3);
+    padding: 8px 20px;
+    border-radius: 5px;
+    width: 208px;
+    margin-top: 20px;
 }
 
 #icon-btn-plus {
@@ -425,8 +441,11 @@ header {
     color: var(--color3);
 }
 
+
+
 .btn-plus:hover {
     color: var(--hover-color-right);
+    background-color: #edecec;
 }
 
 /* ------------- specializzazioni -------------- */
@@ -438,7 +457,7 @@ header {
 
 #container-specializations .subtitle {
     margin-bottom: 30px;
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
 .specializations {
@@ -529,7 +548,7 @@ header {
 
 /* -------------------------------------------- SERVIZI ALTERNATIVA 1---------------------------------------- */
 #services {
-    padding: 80px 120px;
+    padding: 120px;
     text-align: center;
     background-color: var(--background-color1);
 }
@@ -793,7 +812,7 @@ header {
 .p-cit {
     margin: 15px 0;
     font-style: italic;
-    color: #c6c5c5;
+    color: #d6d5d5;
 }
 
 .break-image {
@@ -817,7 +836,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 80px 120px;
+    padding: 110px 120px;
     background-color: var(--background-color1);
 }
 
@@ -1002,7 +1021,7 @@ header {
 /* ------------------------------------------------------- BLOG ---------------------------------------- */
 #blog {
     text-align: center;
-    padding: 80px 120px;
+    padding: 120px;
     background-color: var(--background-color2);
 }
 
@@ -1117,6 +1136,7 @@ header {
     font-weight: bold;
     line-height: 1.5;
     color: #f9f9f9;
+    font-family: var(--poppins);
 }
 
 .break-footer-buttons {
@@ -1147,8 +1167,9 @@ header {
 }
 
 #sub-title-white {
+    text-transform: capitalize;
     margin-bottom: 10px;
-    color: #01ccae;
+    color: #00d8b8;
 }
 
 /* --------------------------- FOOTER ------------------------ */
@@ -1382,11 +1403,6 @@ a {
     gap: 8px;
 }
 
-.footer-logo img {
-    width: 55px;
-    height: auto;
-}
-
 .footer-logo-text {
     display: flex;
     flex-direction: column;
@@ -1409,9 +1425,9 @@ a {
 /* --------------------------------------------------- PAGINE ESTERNE ------------------------------------- */
 /* Contenitore dell'immagine */
 .header-image {
-    margin-top: 60px;
+    margin-top: 80px;
     width: 100%;
-    height: 400px;
+    height: 420px;
     position: relative;
 }
 
@@ -1469,4 +1485,3 @@ a {
     opacity: 1;
     transform: translateY(0) !important;
 }
-

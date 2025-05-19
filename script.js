@@ -32,6 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // chiude il menu cliccando un link
+    const check = document.getElementById('check');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (check) check.checked = false;
+        });
+    });
+});
+
 // ARROW UP 
 const arrowUp = document.querySelector('.arrow-up');
 

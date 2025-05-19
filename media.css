@@ -89,178 +89,12 @@
     }
 }
 
-/* MEDIA TABLET */
-@media (max-width: 1200px) {
+/* MEDIA NAVBAR */
+@media (max-width: 1050px) {
 
     /* --- HEADER --- */
-    .navbar {
-        padding: 10px 50px;
-    }
-
-    .navbar-left {
-        gap: 2px;
-    }
-
-    .navbar-center {
-        gap: 15px;
-    }
-
-    /* --- HOME --- */
-    .hero {
-        padding: 100px 50px 0;
-    }
-
-    .image-container-2 {
-        height: 400px !important;
-    }
-
-    .hero-content {
-        width: 90%;
-    }
-
-    .hero-content h1 {
-        margin-bottom: 20px;
-    }
-
-    .logos {
-        gap: 10px;
-        width: 110px;
-    }
-
-    .question {
-        font-size: 1.1rem !important;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem !important;
-    }
-
-    /* --- CHI SONO --- */
-    #profile {
-        padding: 40px 50px;
-    }
-
-    .profile-name {
-        font-size: 1.1rem;
-    }
-
-    .description {
-        margin: 10px 0;
-    }
-
-    /* --- SERVIZI --- */
-    #services {
-        padding: 40px 50px;
-    }
-
-    .physio-image {
-        margin: 0 30px;
-        width: 310px;
-        height: 240px;
-    }
-
-    .service-box {
-        gap: 20px;
-    }
-
-    .service {
-        padding: 12px;
-    }
-
-    .services-container {
-        margin-top: 20px;
-    }
-
-    .cta-button {
-        margin-top: 30px;
-    }
-
-    /* --- BREAK --- */
-    #break {
-        padding: 40px 50px;
-    }
-
-    .btn {
-        padding: 6px 12px;
-    }
-
-    /* --- RECENSIONI --- */
-    #reviews {
-        padding: 40px 50px;
-    }
-
-    .review-slide {
-        padding: 10px 40px;
-    }
-
-    /* --- FAQ --- */
-    #faq {
-        padding: 40px 50px !important;
-    }
-
-    /* --- BLOG --- */
-    #blog {
-        padding: 60px 50px;
-    }
-
-    /* --- PRE FOOTER -- */
-    .break-footer-content {
-        padding: 40px 50px;
-    }
-
-    /* --- FOOTER --- */
-    footer {
-        padding: 30px 50px;
-    }
-
-    .footer-contact {
-        padding: 0;
-    }
-
-    .menu-columns .ul-services li {
-        list-style: none;
-    }
-
-    .footer-section {
-        min-width: none;
-        width: 100%;
-    }
-
-    .footer-section ul li a {
-        font-size: 0.95rem;
-    }
-
-    .footer-section p,
-    a {
-        font-size: 0.95rem;
-    }
-
-    /* --- PAGINE ESTERNE HEADER IMAGE --- */
-    .header-text {
-        font-size: 1.6rem;
-    }
-
-    /* --- PAGINE ESTERNE CONTATTI --- */
-    #contact {
-        padding: 80px 50px !important;
-    }
-
-    /* --- PAGINE ESTERNE ANCA --- */
-    #article-1 {
-        padding: 80px 50px !important;
-    }
-}
-
-/* MEDIA TABLET - TELEFONO */
-@media (max-width: 900px) {
-
-    /* --- HEADER --- */
-    .navbar {
-        padding: 10px 30px;
-    }
-
     .navbar-left img {
-        height: 40px !important;
+        height: 65px !important;
         width: 100% !important;
     }
 
@@ -304,9 +138,181 @@
         padding: 16px 10px;
     }
 
+}
+
+/* MEDIA TABLET */
+@media (max-width: 1200px) {
+
+    /* --- HEADER --- */
+    .navbar {
+        padding: 4px 50px;
+    }
+
+    .navbar-left {
+        gap: 2px;
+    }
+
+    .navbar-center {
+        gap: 15px;
+    }
+
     /* --- HOME --- */
     .hero {
-        padding: 30px 30px 0;
+        padding: 100px 50px 0;
+    }
+
+    .image-container-2 {
+        height: 400px !important;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 20px;
+    }
+
+    .logos {
+        gap: 10px;
+        width: 110px;
+    }
+
+    .question {
+        font-size: 1.1rem !important;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem !important;
+    }
+
+    /* --- CHI SONO --- */
+    #profile {
+        padding: 105px 50px;
+    }
+
+    .profile-name {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        margin: 10px 0;
+    }
+
+    /* --- SERVIZI --- */
+    #services {
+        padding: 105px 50px;
+    }
+
+    .physio-image {
+        margin: 0 30px;
+        width: 310px;
+        height: 240px;
+    }
+
+    .service-box {
+        gap: 20px;
+    }
+
+    .service {
+        padding: 12px;
+    }
+
+    .services-container {
+        margin-top: 20px;
+    }
+
+    .cta-button {
+        margin-top: 30px;
+    }
+
+    /* --- BREAK --- */
+    #break {
+        padding: 40px 50px;
+    }
+
+    .btn {
+        padding: 9px 14px;
+    }
+
+    /* --- RECENSIONI --- */
+    #reviews {
+        padding: 110px 50px;
+    }
+
+    .review-slide {
+        padding: 10px 40px;
+    }
+
+    /* --- FAQ --- */
+    #faq {
+        padding: 105px 50px !important;
+    }
+
+    /* --- BLOG --- */
+    #blog {
+        padding: 105px 50px;
+    }
+
+    /* --- PRE FOOTER -- */
+    .break-footer-content {
+        padding: 40px 50px;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 30px 50px;
+    }
+
+    .footer-contact {
+        padding: 0;
+    }
+
+    .menu-columns .ul-services li {
+        list-style: none;
+    }
+
+    .footer-section {
+        min-width: none;
+        width: 100%;
+    }
+
+    .footer-section ul li a {
+        font-size: 0.95rem;
+    }
+
+    .footer-section p,
+    a {
+        font-size: 0.95rem;
+    }
+
+    /* --- PAGINE ESTERNE HEADER IMAGE --- */
+    .header-text {
+        font-size: 1.6rem;
+    }
+
+    /* --- PAGINE ESTERNE CONTATTI --- */
+    #contact {
+        padding: 105px 50px !important;
+    }
+
+    /* --- PAGINE ESTERNE blog --- */
+    #article-1 {
+        padding: 105px 50px !important;
+    }
+}
+
+/* MEDIA TABLET - TELEFONO */
+@media (max-width: 900px) {
+
+    /* --- HEADER --- */
+    .navbar {
+        padding: 4px 30px;
+    }
+
+    /* --- HOME --- */
+    .hero {
+        padding: 70px 30px 0;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -320,7 +326,7 @@
     }
 
     .hero-content h1 {
-        margin: 20px 0;
+        margin: 15px 0;
         line-height: 35px;
         font-size: 1.8rem !important;
         word-spacing: normal;
@@ -333,6 +339,7 @@
 
     .comment {
         line-height: normal;
+        margin-bottom: 10px;
     }
 
     .logos {
@@ -345,13 +352,14 @@
 
     .logos img {
         width: 105px;
-
     }
 
-    .buttons {
+    #home .buttons {
         flex-direction: none !important;
         justify-content: center;
         align-items: center;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
     }
 
     .btn {
@@ -374,7 +382,7 @@
 
     /* --- CHI SONO --- */
     #profile {
-        padding: 80px 30px;
+        padding: 100px 30px;
     }
 
     .highlight {
@@ -444,7 +452,7 @@
 
     /* --- SERVIZI --- */
     #services {
-        padding: 80px 30px;
+        padding: 100px 30px;
     }
 
     .services-p {
@@ -548,7 +556,7 @@
 
     /* --- RECENSIONI --- */
     #reviews {
-        padding: 80px 20px 0
+        padding: 110px 20px 0
     }
 
     .reviews-container {
@@ -567,7 +575,7 @@
 
     /* --- FAQ --- */
     #faq {
-        padding: 80px 30px !important;
+        padding: 100px 30px !important;
     }
 
     .faq-question span {
@@ -580,7 +588,7 @@
 
     /* --- BLOG --- */
     #blog {
-        padding: 80px 30px;
+        padding: 100px 30px;
     }
 
     .blog-card .title h3 {
@@ -687,8 +695,8 @@
     }
 
     .footer-logo img {
-        width: 45px;
-        height: 100%;
+        height: 65px;
+        width: 100%;
     }
 
     .footer-logo-text #footer-name {
@@ -726,7 +734,7 @@
 
     /* --- PAGINE ESTERNE CONTATTI --- */
     #contact {
-        padding: 80px 30px !important;
+        padding: 100px 30px !important;
     }
 
     .container-contact {
@@ -737,9 +745,9 @@
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
     }
 
-    /* --- PAGINE ESTERNE ANCA --- */
+    /* --- PAGINE ESTERNE BLOG --- */
     #article-1 {
-        padding: 80px 30px !important;
+        padding: 100px 30px !important;
     }
 
     #article-1 img {
@@ -763,22 +771,11 @@
 
     /* --- HEADER --- */
     .navbar {
-        padding: 10px 20px;
+        padding: 4px 20px;
     }
 
     .nav-toggle {
         right: 20px;
-    }
-
-    .brand-name {
-        display: none;
-        font-size: 1.03rem;
-    }
-
-    .brand-job {
-        display: none;
-        font-size: 0.85rem;
-        letter-spacing: 0;
     }
 
     .menu {
@@ -794,8 +791,13 @@
         height: 100%;
     }
 
+    .navbar-left img {
+        width: 100% !important;
+        height: 55px !important;
+    }
+
     .hero {
-        padding: 20px 20px 0px;
+        padding: 50px 20px 0px;
         justify-content: center;
         flex-direction: column;
         min-height: auto;
@@ -849,7 +851,7 @@
     .btn {
         text-align: center;
         width: 160px !important;
-        padding: 4px 8px !important;
+        padding: 8px 8px !important;
         font-size: 0.7rem !important;
     }
 
@@ -867,7 +869,7 @@
 
     /* --- CHI SONO --- */
     #profile {
-        padding: 80px 20px 30px;
+        padding: 95px 20px 30px;
     }
 
     .container-img {
@@ -894,7 +896,7 @@
 
     /* --- SERVIZI --- */
     #services {
-        padding: 80px 20px;
+        padding: 95px 20px;
     }
 
     .cta-button-responsive {
@@ -918,7 +920,7 @@
 
     /* --- RECENSIONI --- */
     #reviews {
-        padding: 80px 20px 0
+        padding: 100px 20px 0
     }
 
     #reviews .right {
@@ -958,11 +960,11 @@
 
     /* --- FAQ --- */
     #faq {
-        padding: 80px 20px !important;
+        padding: 95px 20px !important;
     }
 
     #blog {
-        padding: 80px 20px;
+        padding: 95px 20px;
     }
 
     .blog-image {
@@ -1000,6 +1002,11 @@
     /* --- FOOTER --- */
     footer {
         padding: 30px 20px;
+    }
+
+    .footer-logo img {
+        height: 55px;
+        width: 100%;
     }
 
     .mydoctor-content {
@@ -1046,7 +1053,7 @@
 
     /* --- PAGINE ESTERNE CONTATTI --- */
     #contact {
-        padding: 80px 20px !important;
+        padding: 95px 20px !important;
     }
 
     .contact-box {
@@ -1055,7 +1062,7 @@
 
     /* --- PAGINE ESTERNE ANCA --- */
     #article-1 {
-        padding: 80px 20px !important;
+        padding: 95px 20px !important;
     }
 
     #article-1 img {
@@ -1080,8 +1087,19 @@
 
 /* --- HOME --- */
 @media (max-width: 367px) {
+
+    /* HEADER */
+    #logo-h {
+        display: none;
+    }
+
+    #fav {
+        display: block !important;
+        height: 60px !important;
+    }
+
     .hero {
-        padding: 25px 20px 0;
+        padding: 45px 20px 0;
     }
 
     .hero-content h1 {
@@ -1115,9 +1133,6 @@
 @media (max-width: 310px) {
 
     /* --- CHI SONO --- */
-    #profile {
-        padding: 50px 10px;
-    }
 
     .container-img {
         height: 240px;

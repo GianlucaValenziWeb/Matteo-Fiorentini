@@ -9,7 +9,8 @@
         content="Fisioterapista e osteopata a Roma. Trattamenti per dolori, postura, infortuni sportivi e altro ancora. Soluzioni su misura per ogni paziente e atleta.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
-    <link rel="preload" as="image" href="images/matteo-fiorentini-osteopata-fisioterapista-500px.webp" type="image/webp">
+    <link rel="preload" as="image" href="images/matteo-fiorentini-osteopata-fisioterapista-500px.webp"
+        type="image/webp">
     <title>Osteopata e Fisioterapista a Roma | Dott. Matteo Fiorentini</title>
 
     <meta name="keywords"
@@ -57,7 +58,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="icon" href="images/logo-matteo-fiorentini.jpg">
+    <link rel="icon" href="images/favicon-matteo-fiorentini-verde.png">
 
     <!-- Link icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -76,12 +77,12 @@
 
         <div class="navbar-left">
             <a href="index.html">
-                <img src="images/logo-matteo-fiorentini.jpg" alt="matteo fiorentini" loading="eager" decoding="sync" width="45" height="100%">
+                <img src="images/logo-ufficiale-matteo-fiorentini.png" alt="matteo fiorentini" loading="eager"
+                    decoding="sync" width="320" height="auto" id="logo-h">
             </a>
-
-            <a href="index.html" class="container-brand" aria-label="logo di matteo fiorentini">
-                <span class="brand-name">Matteo Fiorentini</span>
-                <span class="brand-job">osteopatia - fisioterapia</span>
+            <a href="index.html">
+                <img src="images/favicon-matteo-fiorentini-verde.png" alt="matteo fiorentini" loading="eager"
+                    decoding="sync" width="320" height="auto" style="display: none;" id="fav">
             </a>
         </div>
 
@@ -110,7 +111,7 @@
                 <a href="index.html">Home</a>
                 <a href="profile.html">Chi sono</a>
                 <a href="services.html">Servizi</a>
-                <a href="#reviews">Recensioni</a>
+                <a href="#reviews" class="nav-link">Recensioni</a>
                 <a href="faq.html">Faq</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html" id="contact-menu">Contatti</a>
@@ -148,17 +149,17 @@
                 </div>
             </div>
             <div class="image-container">
-                <img src="images/matteo-fiorentini-osteopata-fisioterapista.webp" class="img-matteo"
+                <img src="images/matteo-fiorentini-osteopata-fisioterapista-no-logo.png" class="img-matteo"
                     alt="matteo fiorentini osteopata fisioterapista" loading="eager" decoding="sync">
             </div>
 
             <div class="image-container-2" style="display: none;">
-                <img src="images/matteo-fiorentini-osteopata-fisioterapista-1200px.webp"
+                <img src="images/matteo-fiorentini-osteopata-fisioterapista-1200px.png"
                     alt="matteo fiorentini osteopata fisioterapista" loading="eager" decoding="sync">
             </div>
 
             <div class="container-img-responsive" style="display: none;">
-                <img src="images/matteo-fiorentini-osteopata-fisioterapista-500px.webp"
+                <img src="images/matteo-fiorentini-osteopata-fisioterapista-500px.png"
                     alt="matteo fiorentini osteopata fisioterapista" loading="eager" decoding="sync">
             </div>
     </section>
@@ -175,7 +176,8 @@
                 </div>
                 <div class="badge">
                     <img src="images/5-stelle-mio-dottore.webp"
-                        alt="recensioni 5 stelle di fiorentini matteo su miodottore.it" loading="lazy" decoding="async" width="140" height="100%">
+                        alt="recensioni 5 stelle di fiorentini matteo su miodottore.it" loading="lazy" decoding="async"
+                        width="130" height="100%">
                 </div>
             </div>
             <!-- text -->
@@ -408,7 +410,7 @@
                 dolore e a ritrovare la libertà di
                 movimento."</p>
             <div class="buttons">
-                <a href="#reviews" class="btn btn-left">scopri di più</a>
+                <a href="#reviews" class="btn btn-left">scopri di piu</a>
                 <a href="contact.html" class="btn btn-right">prenota una visita</a>
             </div>
         </div>
@@ -508,7 +510,7 @@
                     </div>
                     <div class="title">
                         <h3>Legamento crociato anteriore</h3>
-                        <a href="legamento-crociato-anteriore.html" class="blog-link">Leggi di più</a>
+                        <a href="legamento-crociato-anteriore.html" class="blog-link">Leggi di piu</a>
                     </div>
                 </a>
             </article>
@@ -525,7 +527,7 @@
                     </div>
                     <div class="title">
                         <h3>Riabilitazione dell'anca</h3>
-                        <a href="riabilitazione-protesi-anca.html" class="blog-link">Leggi di più</a>
+                        <a href="riabilitazione-protesi-anca.html" class="blog-link">Leggi di piu</a>
                     </div>
                 </a>
             </article>
@@ -542,7 +544,7 @@
                     </div>
                     <div class="title">
                         <h3>Lesioni agli hamstring</h3>
-                        <a href="lesione-muscolare-hamstring.html" class="blog-link">Leggi di più</a>
+                        <a href="lesione-muscolare-hamstring.html" class="blog-link">Leggi di piu</a>
                     </div>
                 </a>
             </article>
@@ -646,25 +648,22 @@
                 <h4 id="title-social">Seguimi su:</h4>
                 <div class="container-social">
                     <a href="https://www.facebook.com/matteo.fioMISTERentini.1?locale=it_IT" target="_blank"
-                        aria-label="Visita il profilo Facebook di matteo fiorentini"><i
-                            class='bx bxl-facebook' id="facebook"></i></a>
+                        aria-label="Visita il profilo Facebook di matteo fiorentini"><i class='bx bxl-facebook'
+                            id="facebook"></i></a>
                     <a href="https://www.instagram.com/ma_fiorentini/" target="_blank"
-                        aria-label="Visita il profilo instagram di matteo fiorentini"><i
-                            class='bx bxl-instagram' id="insta"></i></a>
+                        aria-label="Visita il profilo instagram di matteo fiorentini"><i class='bx bxl-instagram'
+                            id="insta"></i></a>
                     <a href="https://www.linkedin.com/in/matteo-fiorentini-7a668713b/" target="_blank"
-                        aria-label="Visita il profilo linkedin di matteo fiorentini"><i
-                            class='bx bxl-linkedin' id="linkedin"></i> </a>
+                        aria-label="Visita il profilo linkedin di matteo fiorentini"><i class='bx bxl-linkedin'
+                            id="linkedin"></i> </a>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
             <div class="footer-logo">
-                <img src="images/logo-matteo-fiorentini.jpg" alt="matteo fiorentini" loading="lazy" decoding="async" width="55" height="100%">
-                <div class="footer-logo-text">
-                    <span id="footer-name">Matteo Fiorentini</span>
-                    <span id="footer-job">osteopatia - fisioterapia</span>
-                </div>
+                <img src="images/logo-ufficiale-matteo-fiorentini.png" alt="matteo fiorentini" loading="lazy"
+                    decoding="async" width="350" height="auto">
             </div>
             <div class="footer-text">
                 <span style="font-size: 1rem;">2025 &copy; Matteo Fiorentini. Tutti i diritti riservati.</span> <br>
@@ -681,7 +680,7 @@
     </a>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js" async></script>
 <script>
     // TESTO RECENSIONI
