@@ -1,7 +1,7 @@
 //  ANIMATION 
 document.addEventListener('DOMContentLoaded', function () {
 
-    const items = document.querySelectorAll('.profile-section, .services-container, .service-box, .blog-card, .contact-box, .container-contact-social');
+    const items = document.querySelectorAll('.profile-section, .services-container, .blog-card, .contact-box, .container-contact-social');
 
     const observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {

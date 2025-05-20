@@ -536,6 +536,7 @@
     #break {
         flex-direction: column;
         padding: 40px 30px;
+        height: 100vh !important;
     }
 
     .break-content h2 {
@@ -1149,6 +1150,10 @@
 
     .logos img {
         width: 65px;
+    }
+
+    #break {
+        height: 100% !important;
     }
 
     .container-img-responsive {

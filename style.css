@@ -950,7 +950,10 @@ header {
 
 .break-content h2 {
     margin-bottom: 10px;
-    color: #fafafa;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #f9f9f9;
+    font-family: var(--poppins);
 }
 
 .p-cit {
@@ -1618,7 +1621,6 @@ a {
 
 .profile-section,
 .services-container,
-.service-box,
 .blog-card,
 .contact-box,
 .container-contact-social {
