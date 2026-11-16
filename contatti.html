@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Perché il mal di schiena peggiora? Stress, cortisolo e sonno</title>
+    <meta name="description"
+        content="Perché il mal di schiena peggiora nei periodi di stress o dopo aver dormito male? Scopri il ruolo di stress, sonno e cortisolo e quando chiedere una valutazione.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Sostituire con l'URL definitivo della pagina -->
+    <link rel="canonical" href="https://www.tuosito.it/blog/mal-di-schiena-stress-sonno-cortisolo/">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon-osteopata.png" type="image/x-icon">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .process-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800 !important;
+            line-height: 1.15;
+            color: var(--color1);
+            letter-spacing: 0px;
+            /* margin: 0 0 20px; */
+
+        }
+
+        #contact {
+            padding: 120px;
+            background-color: var(--background-color2);
+        }
+
+        .container-contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-box {
+            text-align: center;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid #dfe7e3;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(24, 58, 47, 0.035);
+        }
+
+
+        .contact-box i {
+            font-size: 2.8rem;
+            color: var(--color2);
+            margin-bottom: 10px;
+        }
+
+        #contact h3 {
+            margin-bottom: 10px;
+            text-align: center;
+            color: var(--color1);
+            font-size: 1.13rem;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        #contact p {
+            color: var(--color1);
+            font-weight: 400;
+
+        }
+
+        @media (max-width: 1200px) {
+            #contact {
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #contact {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .process-header h1 {
+                font-size: 2rem;
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            #contact {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+            .container-contact {
+                grid-template-columns: 1fr !important;
+            }
+
+
+            #p-complete {
+                display: none !important;
+            }
+
+            #p-nocomplete {
+                display: block !important;
+            }
+
+            .process-header h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+
+            <input type="checkbox" id="check">
+
+            <!-- LOGO -->
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-ufficiale-matteo-fiorentini.png" alt="OsteoFisio REHAB - Matteo Fiorentini"
+                        id="logo-lungo">
+                    <img src="images/favicon.png" alt="OsteoFisio REHAB - Matteo Fiorentini" style="display: none;"
+                        id="favicon">
+                </a>
+            </div>
+
+            <!-- MENU DESKTOP -->
+            <nav class="navbar-center">
+
+                <a href="chi-siamo.html">Chi sono</a>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">
+                        Patologie
+                        <i class="bx bx-chevron-down"></i>
+                    </a>
+
+                    <div class="nav-dropdown-menu">
+                        <a href="cervicale.html">Cervicale</a>
+                        <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
+                        <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
+                        <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                    </div>
+                </div>
+
+                <a href="#recensioni">Recensioni</a>
+                <a href="blog.html">Blog</a>
+                <a href="contatti.html">Contatti</a>
+
+            </nav>
+
+            <!-- CONTATTI SEMPRE VISIBILI -->
+            <div class="navbar-right">
+
+                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Prenota su Whatsapp</span>
+                </a>
+                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp" style="display: none;"
+                    id="btn-whatsapp-500px">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Contattami</span>
+                </a>
+
+                <a href="#" class="btn-secondary" aria-label="Chiama">
+                    <i class="bx bxs-phone-call"></i>
+                    <span>Chiama</span>
+                </a>
+
+            </div>
+
+            <!-- HAMBURGER -->
+            <label for="check" class="nav-toggle open-menu" aria-label="Apri menu">
+                <i class="bx bx-menu"></i>
+            </label>
+
+            <!-- MENU MOBILE -->
+            <div class="menu">
+
+                <label for="check" class="nav-toggle close-menu" aria-label="Chiudi menu">
+                    <i class="bx bx-x"></i>
+                </label>
+
+                <div class="menu-content">
+
+                    <nav class="menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="chi-sono.html">Chi sono</a>
+
+                        <!-- PATOLOGIE CON APERTURA A TOCCO -->
+                        <div class="mobile-dropdown">
+
+                            <input type="checkbox" id="mobile-patologie">
+
+                            <label for="mobile-patologie" class="mobile-dropdown-toggle">
+                                <span>Patologie</span>
+                                <i class="bx bx-chevron-down"></i>
+                            </label>
+
+                            <div class="mobile-dropdown-links">
+                                <a href="cervicale.html">Cervicale</a>
+                                <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
+                                <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
+                                <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                            </div>
+
+                        </div>
+
+                        <a href="#recensioni">Recensioni</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contatti.html">Contatti</a>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="contact">
+
+        <div class="process-header" style="margin-bottom: 40px;">
+
+            <h1>
+                Contattaci adesso!
+            </h1>
+
+            <p>
+                Per prenotare una visita o ricevere maggiori informazioni, puoi contattare OsteoFisio - Rehab tramite
+                WhatsApp,
+                telefono o email.
+            </p>
+        </div>
+
+
+        <div class="container-contact">
+            <article class="contact-box">
+                <a href="tel:+393281285060" target="_blank">
+                    <i class='bx bxs-phone-call'></i>
+                    <h3>Telefono</h3>
+                    <p>+39 328 128 5060</p>
+                </a>
+            </article>
+
+            <article class="contact-box">
+                <a href="https://wa.me/+393281285060" target="_blank">
+                    <i class='bx bxl-whatsapp'></i>
+                    <h3>Whatsapp</h3>
+                    <p> 328 128 5060</p>
+                </a>
+            </article>
+
+            <article class="contact-box">
+                <a href="mailto: fiorentinimatteo87@gmail.com" target="_blank">
+                    <i class='bx bxs-envelope'></i>
+                    <h3>Email</h3>
+                    <p id="p-complete">fiorentinimatteo87@gmail.com </p>
+                    <p id="p-nocomplete" style="display: none;">fiorentinimatteo87 <br> @gmail.com </p>
+                </a>
+            </article>
+        </div>
+
+    </section>
+
+
+
+    <footer class="rehab-footer">
+
+        <div class="rehab-footer-inner">
+
+            <div class="rehab-footer-columns">
+
+                <!-- NAVIGATION -->
+                <div class="rehab-footer-group">
+
+                    <h3>
+                        Navigazione
+                    </h3>
+
+                    <nav class="rehab-footer-links">
+
+                        <a href="/">
+                            Home
+                        </a>
+
+                        <a href="/chi-sono">
+                            Chi sono
+                        </a>
+
+                        <a href="/#patologie">
+                            Patologie
+                        </a>
+
+                        <a href="/#recensioni">
+                            Recensioni
+                        </a>
+
+                        <a href="/blog">
+                            Blog
+                        </a>
+
+                        <a href="/contatti">
+                            Contatti
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- CONDITIONS -->
+                <div class="rehab-footer-group">
+
+                    <h3>
+                        Patologie
+                    </h3>
+
+                    <nav class="rehab-footer-links">
+
+                        <a href="/cervicale">
+                            Cervicale
+                        </a>
+
+                        <a href="/lombalgia-mal-di-schiena">
+                            Lombalgia / mal di schiena
+                        </a>
+
+                        <a href="/riabilitazione-post-operatoria">
+                            Riabilitazione post-operatoria
+                        </a>
+
+                        <a href="/fisioterapia-recupero-sportivo">
+                            Fisioterapia e recupero sportivo
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- BLOG -->
+                <div class="rehab-footer-group">
+
+                    <h3>
+                        Blog
+                    </h3>
+
+                    <nav class="rehab-footer-links rehab-footer-blog-links">
+
+                        <a href="/blog/mal-di-schiena-cortisolo-sonno-stress">
+                            Perché il mal di schiena peggiora:
+                            cortisolo, sonno e stress
+                        </a>
+
+                        <a href="/blog">
+                            Legamento crociato anteriore
+                        </a>
+
+                        <a href="/blog">
+                            Riabilitazione dopo prtoesi all'anca
+                        </a>
+
+                    </nav>
+
+                    <!-- <a href="/blog" class="rehab-footer-more">
+                        Vai al blog
+                        <span>→</span>
+                    </a> -->
+
+                </div>
+
+                <!-- BRAND -->
+                <div class="rehab-footer-brand">
+
+                    <h3>Contatti</h3>
+
+                    <div class="rehab-footer-details">
+
+                        <p>
+                            Zona: Cinecittà Est, 00173 Roma
+                        </p>
+
+                        <p>
+                            Tel:
+                            <a href="tel:+393XXXXXXXXX" class="footer-tel">
+                                +39 328 128 5060
+                            </a>
+                        </p>
+
+                        <p>
+                            Email:
+                            <a href="tel:+393XXXXXXXXX">
+                                fiorentinimatteo87@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            P.IVA: 14219991008
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM -->
+            <div class="rehab-footer-bottom">
+
+                <p>
+                    © 2026 OsteoFisio REHAB. Tutti i diritti riservati.
+                </p>
+
+                <div class="rehab-footer-legal">
+
+                    <a href="/privacy-policy">
+                        Privacy Policy
+                    </a>
+
+                    <span>·</span>
+
+                    <a href="/cookie-policy">
+                        Cookie Policy
+                    </a>
+
+                </div>
+
+                <p class="rehab-footer-credit">
+                    Sito web realizzato da Gianluca Valenzi
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

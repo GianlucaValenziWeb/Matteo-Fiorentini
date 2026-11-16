@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Carattere e compatibilità -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titolo e descrizione -->
+    <title>Dott. Matteo Fiorentini | Osteopata fisioterapista</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon-osteopata.png" type="image/x-icon">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        :root {
+            --green: #08825f;
+            --green-dark: #066b4e;
+            --green-light: #eaf4f0;
+            --text: #383636;
+            --muted: #686868;
+            --background: #f8f8f8;
+            --white: #ffffff;
+        }
+
+        body {
+            background: #f8f8f8;
+            line-height: 1.75;
+        }
+
+        /* PAGINA */
+
+        .profile-page {
+            padding: 115px 120px 0;
+        }
+
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: start;
+            gap: 65px;
+        }
+
+        /* COLONNA FOTO */
+
+        .profile-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .profile-photo-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .profile-photo {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        /* COLONNA CONTENUTI */
+
+        .profile-header {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #dededb;
+        }
+
+        .profile-header h1 {
+            font-size: 2.47rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--color1);
+            letter-spacing: 0px;
+            margin: 8px 0 14px;
+        }
+
+        .profile-intro {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--color1);
+        }
+
+        /* SEZIONI */
+
+        .profile-section {
+            padding: 30px 0;
+            border-bottom: 1px solid #e2e2df;
+        }
+
+        .profile-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .profile-section h2 {
+            display: block;
+            color: var(--color1);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+        }
+
+        .profile-section p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--color1);
+            margin-bottom: 12px;
+        }
+
+        .profile-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* DATI PROFESSIONALI */
+
+        .experience-strip {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            margin: 30px 0 10px;
+            background: #dce8e2;
+            border: 1px solid #dce8e2;
+        }
+
+        .experience-item {
+            background: var(--green-light);
+            padding: 22px 18px;
+        }
+
+        .experience-item strong {
+            display: block;
+            color: var(--green-dark);
+            font-size: 27px;
+            line-height: 1.2;
+            margin-bottom: 6px;
+        }
+
+        .experience-item span {
+            display: block;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #53645c;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1200px) {
+            .profile-page {
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .profile-page {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .profile-header h1 {
+                font-size: 2rem;
+            }
+
+            .profile-container {
+                grid-template-columns: 1fr !important;
+                gap: 30px;
+            }
+
+            .profile-sidebar {
+                position: relative;
+                top: 0;
+            }
+
+            .profile-photo-wrapper {
+                width: 70%;
+                height: 350px;
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            .profile-page {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+            .profile-photo-wrapper {
+                width: 100%;
+                height: 100%;
+            }
+
+
+            .profile-header h1 {
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <input type="checkbox" id="check">
+
+            <!-- LOGO -->
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-ufficiale-matteo-fiorentini.png" alt="OsteoFisio REHAB - Matteo Fiorentini"
+                        id="logo-lungo">
+                    <img src="images/favicon.png" alt="OsteoFisio REHAB - Matteo Fiorentini" style="display: none;"
+                        id="favicon">
+                </a>
+            </div>
+
+            <!-- MENU DESKTOP -->
+            <nav class="navbar-center">
+
+                <a href="chi-siamo.html">Chi sono</a>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">
+                        Patologie
+                        <i class="bx bx-chevron-down"></i>
+                    </a>
+
+                    <div class="nav-dropdown-menu">
+                        <a href="cervicale.html">Cervicale</a>
+                        <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
+                        <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
+                        <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                    </div>
+                </div>
+
+                <a href="#recensioni">Recensioni</a>
+                <a href="blog.html">Blog</a>
+                <a href="contatti.html">Contatti</a>
+
+            </nav>
+
+            <!-- CONTATTI SEMPRE VISIBILI -->
+            <div class="navbar-right">
+
+                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Prenota su Whatsapp</span>
+                </a>
+                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp" style="display: none;"
+                    id="btn-whatsapp-500px">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Contattami</span>
+                </a>
+
+                <a href="#" class="btn-secondary" aria-label="Chiama">
+                    <i class="bx bxs-phone-call"></i>
+                    <span>Chiama</span>
+                </a>
+
+            </div>
+
+            <!-- HAMBURGER -->
+            <label for="check" class="nav-toggle open-menu" aria-label="Apri menu">
+                <i class="bx bx-menu"></i>
+            </label>
+
+            <!-- MENU MOBILE -->
+            <div class="menu">
+
+                <label for="check" class="nav-toggle close-menu" aria-label="Chiudi menu">
+                    <i class="bx bx-x"></i>
+                </label>
+
+                <div class="menu-content">
+
+                    <nav class="menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="chi-sono.html">Chi sono</a>
+
+                        <!-- PATOLOGIE CON APERTURA A TOCCO -->
+                        <div class="mobile-dropdown">
+
+                            <input type="checkbox" id="mobile-patologie">
+
+                            <label for="mobile-patologie" class="mobile-dropdown-toggle">
+                                <span>Patologie</span>
+                                <i class="bx bx-chevron-down"></i>
+                            </label>
+
+                            <div class="mobile-dropdown-links">
+                                <a href="cervicale.html">Cervicale</a>
+                                <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
+                                <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
+                                <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                            </div>
+
+                        </div>
+
+                        <a href="#recensioni">Recensioni</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contatti.html">Contatti</a>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="profile-page">
+
+        <div class="profile-container">
+
+            <!-- COLONNA SINISTRA: FOTO -->
+
+            <aside class="profile-sidebar">
+
+                <div class="profile-photo-wrapper">
+                    <img src="images/matteo-fiorentini.png" alt="Dott. Matteo Fiorentini, fisioterapista e osteopata"
+                        class="profile-photo">
+                </div>
+
+            </aside>
+
+
+            <!-- COLONNA DESTRA: CONTENUTI -->
+
+            <article class="profile-content">
+
+                <!-- INTRODUZIONE -->
+
+                <div class="profile-header">
+
+                    <span class="about-label-span">Chi sono</span>
+
+                    <h1>Dott. Matteo Fiorentini Fisioterapista e osteopata</h1>
+
+                    <p class="profile-intro">
+                        Il Dott. Matteo Fiorentini è un fisioterapista e osteopata
+                        che ha dedicato il proprio percorso professionale allo studio
+                        del movimento, alla riabilitazione e al benessere della persona.
+                        La passione per lo sport e per il funzionamento del corpo umano
+                        ha guidato la sua formazione e lo ha portato a sviluppare
+                        un approccio basato su competenza, ascolto e attenzione
+                        alle esigenze individuali.
+                    </p>
+
+                </div>
+
+
+                <!-- COSA FA -->
+
+                <section class="profile-section">
+
+                    <h2>01 — ATTIVITÀ PROFESSIONALE</h2>
+
+                    <p>
+                        Matteo Fiorentini si occupa di fisioterapia, osteopatia
+                        e recupero funzionale. Il suo lavoro comprende la valutazione
+                        delle problematiche muscolo-scheletriche, il trattamento
+                        del dolore, la riabilitazione dopo traumi o interventi
+                        e il recupero delle capacità necessarie per tornare
+                        alle attività quotidiane e sportive.
+                    </p>
+
+                    <p>
+                        Ogni percorso parte dall'ascolto e dalla valutazione della
+                        persona. In base alle necessità individuate, vengono scelti
+                        gli interventi e gli esercizi più appropriati, con l'obiettivo
+                        di costruire un programma personalizzato e seguirne
+                        l'evoluzione nel tempo.
+                    </p>
+
+                </section>
+
+
+                <!-- FORMAZIONE -->
+
+                <section class="profile-section">
+
+                    <h2>02 — FORMAZIONE</h2>
+
+                    <p>
+                        Il percorso formativo del Dott. Fiorentini comprende
+                        la formazione universitaria in ambito fisioterapico
+                        e ulteriori esperienze di approfondimento nell'ambito
+                        del movimento e della riabilitazione.
+                    </p>
+
+                    <p>
+                        La formazione specialistica, i corsi di perfezionamento
+                        e gli studi successivi contribuiscono a consolidare
+                        le competenze necessarie per affrontare le diverse
+                        esigenze riabilitative.
+                    </p>
+
+
+                </section>
+
+
+                <!-- ESPERIENZA -->
+
+                <section class="profile-section">
+
+                    <h2>03 — ESPERIENZA</h2>
+
+                    <p>
+                        Nel corso di oltre 15 anni di esperienza, Matteo Fiorentini
+                        ha approfondito diversi ambiti della fisioterapia e
+                        della riabilitazione, sviluppando una particolare attenzione
+                        per il recupero funzionale e la fisioterapia sportiva.
+                    </p>
+
+                    <p>
+                        Ha maturato esperienza nel lavoro con sportivi amatoriali
+                        e professionisti e in contesti legati al calcio e al
+                        calcio a cinque. Questa esperienza si affianca al lavoro
+                        con persone che desiderano recuperare movimento,
+                        autonomia e funzionalità nella vita quotidiana.
+                    </p>
+
+                    <div class="experience-strip">
+
+                        <div class="experience-item">
+                            <strong>15+</strong>
+                            <span>Anni di esperienza</span>
+                        </div>
+
+                        <div class="experience-item">
+                            <strong>300+</strong>
+                            <span>Pazienti seguiti</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- AGGIORNAMENTO -->
+
+                <section class="profile-section">
+
+                    <h2>04 — CRESCITA PROFESSIONALE</h2>
+
+                    <p>
+                        La preparazione di un professionista sanitario richiede
+                        studio e aggiornamento costanti. Per questo Matteo Fiorentini
+                        considera la formazione continua una parte importante
+                        della propria attività.
+                    </p>
+
+                    <p>
+                        Approfondire nuove conoscenze, confrontarsi con altri
+                        professionisti e aggiornare le proprie competenze permette
+                        di affrontare le diverse esigenze riabilitative con
+                        consapevolezza e attenzione.
+                    </p>
+
+                </section>
+
+
+                <!-- FILOSOFIA -->
+
+                <section class="profile-section">
+
+                    <h2>05 — APPROCCIO</h2>
+
+                    <p>
+                        Alla base del lavoro di Matteo Fiorentini c'è una convinzione:
+                        non esistono persone uguali e, di conseguenza, non dovrebbero
+                        esistere percorsi riabilitativi identici.
+                    </p>
+
+                    <p>
+                        Ogni trattamento deve partire dall'ascolto, dalla comprensione
+                        delle difficoltà e dalla definizione di obiettivi condivisi.
+                        La persona non è soltanto il problema da trattare, ma parte
+                        attiva del proprio percorso di recupero.
+                    </p>
+
+                    <p>
+                        Comunicazione, personalizzazione e trasparenza sono quindi
+                        elementi fondamentali: spiegare le scelte terapeutiche,
+                        coinvolgere il paziente e accompagnarlo con gradualità
+                        significa costruire un percorso consapevole e condiviso.
+                    </p>
+
+                </section>
+
+
+                <!-- NASCITA OSTEOFISIO REHAB -->
+
+                <section class="profile-section project-section">
+
+                    <h2>06 — Perché nasce OsteoFisio - Rehab</h2>
+
+                    <p>
+                        OsteoFisio REHAB nasce dalla volontà di Matteo Fiorentini
+                        di dare forma a un progetto professionale che rispecchi
+                        la sua idea di fisioterapia e riabilitazione.
+                    </p>
+
+                    <p>
+                        L'obiettivo è creare un punto di riferimento in cui
+                        competenza, ascolto e attenzione alla persona si integrino
+                        nella costruzione di percorsi personalizzati. Un progetto
+                        che non si limita al trattamento del sintomo, ma guarda
+                        alla persona, alle sue necessità e agli obiettivi
+                        che desidera raggiungere.
+                    </p>
+
+                    <div class="project-highlight">
+                        <p>
+                            OsteoFisio REHAB rappresenta la visione professionale
+                            di Matteo Fiorentini: mettere la persona, il movimento
+                            e il recupero funzionale al centro di ogni percorso.
+                        </p>
+                    </div>
+
+                </section>
+
+
+                <!-- VISIONE FUTURA -->
+
+                <section class="profile-section">
+
+                    <h2>07 — LA VISIONE FUTURA</h2>
+
+                    <p>
+                        La visione di OsteoFisio REHAB guarda al futuro.
+                        Matteo Fiorentini desidera far crescere il progetto
+                        fino a trasformarlo in una realtà strutturata, capace
+                        di riunire più professionisti e competenze complementari.
+                    </p>
+
+                    <p>
+                        L'idea è costruire un centro nel quale diverse figure
+                        possano collaborare e contribuire, ciascuna con la propria
+                        esperienza, alla presa in carico della persona.
+                    </p>
+
+                    <p>
+                        Un progetto di crescita che vuole mantenere saldi
+                        i principi da cui è nato: professionalità, collaborazione,
+                        aggiornamento e centralità del paziente.
+                    </p>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+
+    <section class="final-action-section">
+
+        <div class="final-action-container">
+
+            <div class="process-header" style="margin-bottom: 40px;">
+                <span class="process-eyebrow">Contatti</span>
+
+                <h2>
+                    Prenota la tua prima valutazione
+                </h2>
+
+                <p>
+                    Hai un dolore, fai fatica a muoverti come vorresti o vuoi recuperare dopo un infortunio?
+                    Scrivimi su WhatsApp o chiamami direttamente.
+                </p>
+            </div>
+            <!-- 
+            <div class="final-action-buttons">
+
+                <a href="https://wa.me/393XXXXXXXXX?text=Ciao%2C%20vorrei%20prenotare%20una%20valutazione."
+                    class="final-action-primary" target="_blank" rel="noopener">
+                    Prenota una valutazione su WhatsApp
+                    <span>→</span>
+                </a>
+
+                <a href="tel:+393XXXXXXXXX" class="final-action-secondary">
+                    Oppure chiamaci
+                </a>
+
+            </div> -->
+            <div class="hero-buttons">
+                <div class="btn-whatsapp">
+                    <i class="bx bxl-whatsapp"></i>
+                    <a href="#" class="btn-primary">Prenota su whatsapp</a>
+                </div>
+
+                <div class="btn-secondary">
+                    <i class="bx bxs-phone-call"></i>
+                    <a href="#">Chiama ora</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="rehab-footer">
+
+        <div class="rehab-footer-inner">
+
+            <div class="container-footer-img">
+                <img src="images/Progetto senza titolo (17).png" alt="">
+            </div>
+
+            <div class="rehab-footer-columns">
+
+                <!-- NAVIGATION -->
+                <div class="rehab-footer-group">
+
+                    <h3>
+                        Navigazione
+                    </h3>
+
+                    <nav class="rehab-footer-links">
+
+                        <a href="/">
+                            Home
+                        </a>
+
+                        <a href="/chi-sono">
+                            Chi sono
+                        </a>
+
+                        <a href="/#patologie">
+                            Patologie
+                        </a>
+
+                        <a href="/#recensioni">
+                            Recensioni
+                        </a>
+
+                        <a href="/blog">
+                            Blog
+                        </a>
+
+                        <a href="/contatti">
+                            Contatti
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- CONDITIONS -->
+                <div class="rehab-footer-group">
+
+                    <h3>
+                        Patologie
+                    </h3>
+
+                    <nav class="rehab-footer-links">
+
+                        <a href="/cervicale">
+                            Cervicale
+                        </a>
+
+                        <a href="/lombalgia-mal-di-schiena">
+                            Lombalgia / mal di schiena
+                        </a>
+
+                        <a href="/riabilitazione-post-operatoria">
+                            Riabilitazione post-operatoria
+                        </a>
+
+                        <a href="/fisioterapia-recupero-sportivo">
+                            Fisioterapia e recupero sportivo
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- BLOG -->
+                <div class="rehab-footer-group">
+
+                    <h3>
+                        Blog
+                    </h3>
+
+                    <nav class="rehab-footer-links rehab-footer-blog-links">
+
+                        <a href="/blog/mal-di-schiena-cortisolo-sonno-stress">
+                            Perché il mal di schiena peggiora:
+                            cortisolo, sonno e stress
+                        </a>
+
+                        <a href="/blog">
+                            Legamento crociato anteriore
+                        </a>
+
+                        <a href="/blog">
+                            Riabilitazione dopo prtoesi all'anca
+                        </a>
+
+                    </nav>
+
+                    <!-- <a href="/blog" class="rehab-footer-more">
+                        Vai al blog
+                        <span>→</span>
+                    </a> -->
+
+                </div>
+
+                <!-- BRAND -->
+                <div class="rehab-footer-brand">
+
+                    <h3>Contatti</h3>
+
+                    <div class="rehab-footer-details">
+
+                        <p>
+                            Zona: Cinecittà Est, 00173 Roma
+                        </p>
+
+                        <p>
+                            Tel:
+                            <a href="tel:+393XXXXXXXXX" class="footer-tel">
+                                +39 328 128 5060
+                            </a>
+                        </p>
+
+                        <p>
+                            Email:
+                            <a href="tel:+393XXXXXXXXX">
+                                fiorentinimatteo87@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            P.IVA: 14219991008
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM -->
+            <div class="rehab-footer-bottom">
+
+                <p>
+                    © 2026 OsteoFisio REHAB. Tutti i diritti riservati.
+                </p>
+
+                <div class="rehab-footer-legal">
+
+                    <a href="/privacy-policy">
+                        Privacy Policy
+                    </a>
+
+                    <span>·</span>
+
+                    <a href="/cookie-policy">
+                        Cookie Policy
+                    </a>
+
+                </div>
+
+                <p class="rehab-footer-credit">
+                    Sito web realizzato da Gianluca Valenzi
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
