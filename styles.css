@@ -31,10 +31,6 @@ strong {
     font-weight: 600;
 }
 
-.boh {
-    background-color: #F4F6F5;
-    background-color: #f8f8f8;
-}
 
 
 /* =========================================
@@ -357,6 +353,8 @@ header {
     height: 100vh;
     position: relative;
     padding-top: 80px;
+    background-color: #f8f8f8;
+
 }
 
 .hero {

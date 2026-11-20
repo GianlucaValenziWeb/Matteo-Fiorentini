@@ -52,119 +52,119 @@
 </head>
 
 <body>
-    <div class="boh">
+    <header role="navigation">
+        <div class="navbar">
 
-        <header>
-            <div class="navbar">
+            <input type="checkbox" id="check">
 
-                <input type="checkbox" id="check">
+            <!-- LOGO -->
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-osteofisiorehab-dott-matteo-fiorentini.png"
+                        alt="Logo OsteoFisio - Rehab, studio di fisioterapia e osteopatia del Dott. Matteo Fiorentini."
+                        id="logo-lungo" loading="eager" decoding="sync" fetchpriority="high">
+                    <img src="images/logo-osteofisiorehab-dott-matteo-fiorentini-500px.png"
+                        alt="Logo OsteoFisio - Rehab, studio di fisioterapia e osteopatia del Dott. Matteo Fiorentini."
+                        style="display: none;" id="favicon" loading="eager" decoding="sync" fetchpriority="high">
+                </a>
+            </div>
 
-                <!-- LOGO -->
-                <div class="navbar-left">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo-osteofisiorehab-dott-matteo-fiorentini.png"
-                            alt="Logo OsteoFisio - Rehab, studio di fisioterapia e osteopatia del Dott. Matteo Fiorentini."
-                            id="logo-lungo" loading="eager" decoding="sync" fetchpriority="high">
-                        <img src="images/logo-osteofisiorehab-dott-matteo-fiorentini-500px.png"
-                            alt="Logo OsteoFisio - Rehab, studio di fisioterapia e osteopatia del Dott. Matteo Fiorentini."
-                            style="display: none;" id="favicon" loading="eager" decoding="sync" fetchpriority="high">
-                    </a>
-                </div>
+            <!-- MENU DESKTOP -->
+            <nav class="navbar-center">
 
-                <!-- MENU DESKTOP -->
-                <nav class="navbar-center">
+                <a href="chi-siamo.html">Chi sono</a>
 
-                    <a href="chi-siamo.html">Chi sono</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">
+                        Patologie
+                        <i class="bx bx-chevron-down"></i>
 
-                    <div class="nav-dropdown">
-                        <a href="#" class="nav-dropdown-toggle">
-                            Patologie
-                            <i class="bx bx-chevron-down"></i>
-                            
-                        </a>
-
-                        <div class="nav-dropdown-menu">
-                            <a href="cervicale.html">Cervicale</a>
-                            <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
-                            <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
-                            <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
-                        </div>
-                    </div>
-
-                    <a href="#recensioni">Recensioni</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contatti.html">Contatti</a>
-
-                </nav>
-
-                <!-- CONTATTI SEMPRE VISIBILI -->
-                <div class="navbar-right">
-
-                    <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp">
-                        <i class="bx bxl-whatsapp"></i>
-                        <span>Prenota su Whatsapp</span>
-                    </a>
-                    <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp" style="display: none;"
-                        id="btn-whatsapp-500px">
-                        <i class="bx bxl-whatsapp"></i>
-                        <span>Contattami</span>
                     </a>
 
-                    <a href="#" class="btn-secondary" aria-label="Chiama">
-                        <i class="bx bxs-phone-call"></i>
-                        <span>Chiama</span>
-                    </a>
-
-                </div>
-
-                <!-- HAMBURGER -->
-                <label for="check" class="nav-toggle open-menu">
-                    <i class="bx bx-menu"></i>
-                </label>
-
-                <!-- MENU MOBILE -->
-                <div class="menu">
-
-                    <label for="check" class="nav-toggle close-menu">
-                        <i class="bx bx-x"></i>
-                    </label>
-
-                    <div class="menu-content">
-
-                        <nav class="menu-links">
-                            <a href="index.html">Home</a>
-                            <a href="chi-sono.html">Chi sono</a>
-
-                            <!-- PATOLOGIE CON APERTURA A TOCCO -->
-                            <div class="mobile-dropdown">
-
-                                <input type="checkbox" id="mobile-patologie">
-
-                                <label for="mobile-patologie" class="mobile-dropdown-toggle">
-                                    <span>Patologie</span>
-                                    <i class="bx bx-chevron-down"></i>
-                                </label>
-
-                                <div class="mobile-dropdown-links">
-                                    <a href="cervicale.html">Cervicale</a>
-                                    <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
-                                    <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
-                                    <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
-                                </div>
-
-                            </div>
-
-                            <a href="#recensioni">Recensioni</a>
-                            <a href="blog.html">Blog</a>
-                            <a href="contatti.html">Contatti</a>
-
-                        </nav>
-
+                    <div class="nav-dropdown-menu">
+                        <a href="cervicale.html">Cervicale</a>
+                        <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
+                        <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
+                        <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
                     </div>
                 </div>
+
+                <a href="#recensioni">Recensioni</a>
+                <a href="blog.html">Blog</a>
+                <a href="contatti.html">Contatti</a>
+
+            </nav>
+
+            <!-- CONTATTI SEMPRE VISIBILI -->
+            <div class="navbar-right">
+
+                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Prenota su Whatsapp</span>
+                </a>
+                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp" style="display: none;"
+                    id="btn-whatsapp-500px">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Contattami</span>
+                </a>
+
+                <a href="#" class="btn-secondary" aria-label="Chiama">
+                    <i class="bx bxs-phone-call"></i>
+                    <span>Chiama</span>
+                </a>
 
             </div>
-        </header>
+
+            <!-- HAMBURGER -->
+            <label for="check" class="nav-toggle open-menu">
+                <i class="bx bx-menu"></i>
+            </label>
+
+            <!-- MENU MOBILE -->
+            <div class="menu">
+
+                <label for="check" class="nav-toggle close-menu">
+                    <i class="bx bx-x"></i>
+                </label>
+
+                <div class="menu-content">
+
+                    <nav class="menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="chi-sono.html">Chi sono</a>
+
+                        <!-- PATOLOGIE CON APERTURA A TOCCO -->
+                        <div class="mobile-dropdown">
+
+                            <input type="checkbox" id="mobile-patologie">
+
+                            <label for="mobile-patologie" class="mobile-dropdown-toggle">
+                                <span>Patologie</span>
+                                <i class="bx bx-chevron-down"></i>
+                            </label>
+
+                            <div class="mobile-dropdown-links">
+                                <a href="cervicale.html">Cervicale</a>
+                                <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
+                                <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
+                                <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                            </div>
+
+                        </div>
+
+                        <a href="#recensioni">Recensioni</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contatti.html">Contatti</a>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main role="main">
 
         <section id="home">
             <div class="hero">
@@ -266,906 +266,925 @@
             </div>
         </section>
 
-    </div>
+        <section class="break stats-break">
+            <div class="stats-overlay"></div>
 
-    <section class="break stats-break">
-        <div class="stats-overlay"></div>
-
-        <div class="stats-container">
-            <div class="stat-box">
-                <h2>300 + </h2>
-                <h3>Pazienti seguiti</h3>
-            </div>
-
-            <div class="stat-box center">
-                <h2>15 +</h2>
-                <h3>Anni di esperienza</h3>
-            </div>
-
-            <div class="stat-box">
-                <h2>100%</h2>
-                <h3>Clienti soddisfatti</h3>
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="about-section" id="about">
-
-        <!-- Main content -->
-        <div class="about-grid">
-
-            <!-- Left: Images -->
-            <div class="about-gallery">
-
-                <div class="about-image about-image-main">
-                    <img src="images/matteo-fiorentini-fisioterapia-paziente.avif"
-                        alt="Matteo Fiorentini e un suo paziente si stringono la mano." loading="lazy" decoding="async">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h2>300 + </h2>
+                    <h3>Pazienti seguiti</h3>
                 </div>
 
-                <div class="about-image about-image-secondary">
-                    <img src="images/matteo-fiorentini-trattamento-alla-caviglia.avif"
-                        alt="Il Dott. Matteo Fiorentini esegue un trattamento manuale alla caviglia di un paziente"
-                        loading="lazy" decoding="async">
+                <div class="stat-box center">
+                    <h2>15 +</h2>
+                    <h3>Anni di esperienza</h3>
+                </div>
+
+                <div class="stat-box">
+                    <h2>100%</h2>
+                    <h3>Clienti soddisfatti</h3>
                 </div>
 
             </div>
+        </section>
 
-            <!-- Right: Text -->
-            <div class="about-content">
+        <section class="about-section" id="about">
 
-                <span class="about-label-span">Chi sono</span>
+            <!-- Main content -->
+            <div class="about-grid">
 
-                <h2>
-                    Dott. Matteo Fiorentini
-                </h2>
+                <!-- Left: Images -->
+                <div class="about-gallery">
 
-                <p class="about-description">
-                    Sono <strong>fisioterapista e osteopata</strong>, e con <strong>OsteoFisio - Rehab</strong> ho dato
-                    forma a un
-                    progetto che mette al centro la persona, il movimento e il recupero funzionale.
-                </p>
-
-                <p class="about-description">
-                    Nel mio lavoro
-                    unisco ascolto, valutazione e trattamenti personalizzati, con l'obiettivo di aiutare ogni paziente a
-                    ritrovare benessere e fiducia nel movimento.
-                </p>
-
-                <!-- Key points -->
-                <ul class="about-features">
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Oltre 15 anni di esperienza</strong> nel campo del movimento e della riabilitazione.
-                        </span>
-                    </li>
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Sportivi amatoriali e professionisti:</strong>
-                            esperienza nel trattamento e nel recupero degli atleti.
-                        </span>
-                    </li>
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Collaborazioni sportive: </strong>esperienza di collaborazione con società di calcio
-                            e calcio a 5.
-                        </span>
-                    </li>
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Percorsi personalizzati: </strong> attenzione alle esigenze di ogni paziente, dal
-                            dolore muscolo-scheletrico al recupero dopo un infortunio.
-                        </span>
-                    </li>
-
-                </ul>
-
-                <div class="hero-buttons" id="hero-buttons-about">
-                    <div class="btn-whatsapp" id="btn-about-primary">
-                        <a href="#" class="btn-primary">Scopri di piu</a>
+                    <div class="about-image about-image-main">
+                        <img src="images/matteo-fiorentini-fisioterapia-paziente.avif"
+                            alt="Matteo Fiorentini e un suo paziente si stringono la mano." loading="lazy"
+                            decoding="async">
                     </div>
-                    <div class="btn-secondary" id="btn-about-secondary">
-                        <a href="#">Scopri il mio approccio</a>
-                        <i class="bx bx-down-arrow-alt"></i>
+
+                    <div class="about-image about-image-secondary">
+                        <img src="images/matteo-fiorentini-trattamento-alla-caviglia.avif"
+                            alt="Il Dott. Matteo Fiorentini esegue un trattamento manuale alla caviglia di un paziente"
+                            loading="lazy" decoding="async">
                     </div>
 
                 </div>
 
+                <!-- Right: Text -->
+                <div class="about-content">
 
-                <!-- Testimonial -->
-                <div class="about-testimonial">
+                    <span class="about-label-span">Chi sono</span>
 
-                    <div class="testimonial-line"></div>
+                    <h2>
+                        Dott. Matteo Fiorentini
+                    </h2>
 
-                    <div class="testimonial-body">
+                    <p class="about-description">
+                        Sono <strong>fisioterapista e osteopata</strong>, e con <strong>OsteoFisio - Rehab</strong> ho
+                        dato
+                        forma a un
+                        progetto che mette al centro la persona, il movimento e il recupero funzionale.
+                    </p>
 
-                        <div class="testimonial-avatar">
-                            <img src="images/francesco-paziente-osteofisiorehab.avif" alt="Francesco, paziente del Dott. Matteo Fiorentini, 
+                    <p class="about-description">
+                        Nel mio lavoro
+                        unisco ascolto, valutazione e trattamenti personalizzati, con l'obiettivo di aiutare ogni
+                        paziente a
+                        ritrovare benessere e fiducia nel movimento.
+                    </p>
+
+                    <!-- Key points -->
+                    <ul class="about-features">
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Oltre 15 anni di esperienza</strong> nel campo del movimento e della
+                                riabilitazione.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Sportivi amatoriali e professionisti:</strong>
+                                esperienza nel trattamento e nel recupero degli atleti.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Collaborazioni sportive: </strong>esperienza di collaborazione con società di
+                                calcio
+                                e calcio a 5.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Percorsi personalizzati: </strong> attenzione alle esigenze di ogni paziente,
+                                dal
+                                dolore muscolo-scheletrico al recupero dopo un infortunio.
+                            </span>
+                        </li>
+
+                    </ul>
+
+                    <div class="hero-buttons" id="hero-buttons-about">
+                        <div class="btn-whatsapp" id="btn-about-primary">
+                            <a href="#" class="btn-primary">Scopri di piu</a>
+                        </div>
+                        <div class="btn-secondary" id="btn-about-secondary">
+                            <a href="#">Scopri il mio approccio</a>
+                            <i class="bx bx-down-arrow-alt"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Testimonial -->
+                    <div class="about-testimonial">
+
+                        <div class="testimonial-line"></div>
+
+                        <div class="testimonial-body">
+
+                            <div class="testimonial-avatar">
+                                <img src="images/francesco-paziente-osteofisiorehab.avif" alt="Francesco, paziente del Dott. Matteo Fiorentini, 
+                                        autore di una recensione su OsteoFisio - Rehab" loading="lazy"
+                                    decoding="async">
+                            </div>
+
+                            <div class="testimonial-content">
+
+                                <!-- Replace this text with a real Google review -->
+                                <p class="testimonial-quote">
+                                    “ <strong class="highlight">Matteo è un professionista esemplare</strong>. Parte
+                                    dall'ascolto e da check approfonditi prima
+                                    di
+                                    intervenire attraverso un approccio olistico.
+                                    Dopo poco tempo ho ottenuto dei risultati tangibili. Una sicurezza! ”
+
+                                </p>
+
+                                <div class="testimonial-meta">
+
+                                    <strong>Francesco</strong>
+
+                                    <div class="testimonial-stars">
+                                        ★★★★★
+                                    </div>
+
+                                    <span class="testimonial-role">
+                                        Cliente OsteoFisio-Rehab
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="process-section" id="approccio">
+
+            <div class="process-container">
+
+                <div class="process-header">
+                    <span class="process-eyebrow">IL PERCORSO CON OSTEOFISIO - REHAB</span>
+
+                    <h2>
+                        Un percorso pensato per i tuoi obiettivi
+                    </h2>
+
+                    <p>
+                        Il Dott. Matteo Fiorentini unisce
+                        valutazione, competenza ed esperienza per individuare
+                        il trattamento più adatto alle tue necessità.
+                    </p>
+                </div>
+
+                <div class="process-steps">
+
+                    <article class="process-card step-1">
+                        <div class="step-number">01</div>
+                        <h3>Ascolto e valutazione</h3>
+                        <p>
+                            Partiamo dalla tua storia, dai sintomi e dalle difficoltà
+                            quotidiane per comprendere le tue necessità e definire
+                            gli obiettivi del percorso.
+                        </p>
+                    </article>
+
+                    <article class="process-card step-2">
+                        <div class="step-number">02</div>
+                        <h3>Un programma personalizzato</h3>
+                        <p>
+                            Sulla base della valutazione, definiamo un programma
+                            calibrato sulla tua condizione fisica, sulle tue esigenze
+                            e sugli obiettivi che vuoi raggiungere.
+                        </p>
+                    </article>
+
+                    <article class="process-card step-3">
+                        <div class="step-number">03</div>
+                        <h3>Trattamento e recupero</h3>
+                        <p>
+                            Attraverso il trattamento manuale e l'esercizio
+                            terapeutico lavoriamo sulle limitazioni emerse,
+                            adattando il percorso ai tuoi progressi.
+                        </p>
+                    </article>
+
+                    <article class="process-card step-4">
+                        <div class="step-number">04</div>
+                        <h3>Ritorno alla quotidianità</h3>
+                        <p>
+                            Lavoriamo per recuperare movimento e autonomia,
+                            aiutandoti a tornare gradualmente alle attività
+                            quotidiane, lavorative o sportive.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="process-footer">
+
+                    <p>
+                        Ogni percorso viene adattato alla tua situazione,
+                        ai tuoi obiettivi e ai progressi che facciamo insieme.
+                    </p>
+
+                    <div class="btn-whatsapp" id="btn-whatsapp-nav">
+                        <i class="bx bxl-whatsapp"></i>
+                        <a href="#" class="btn-primary">Prenota una valutazione</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="reviews-section" id="recensioni">
+
+            <div class="reviews-container">
+
+
+                <!-- Header -->
+                <div class="process-header" style="margin-bottom: 40px;">
+                    <span class="process-eyebrow">Recensioni OsteoFisio Rehab</span>
+
+                    <h2 style="margin-bottom: 10px;">
+                        Alcune delle testimonianze di chi si è affidato a noi
+                    </h2>
+
+                </div>
+
+                <!-- Reviews -->
+                <div class="reviews-grid">
+
+
+                    <!-- Review 01 -->
+                    <article class="review-card">
+
+                        <div class="review-avatar-card">
+                            <img src="images/stefania-paziente-osteofisiorehab.avif" alt="Stefania, paziente del Dott. Matteo Fiorentini, 
+                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
+                                decoding="async">
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+                            Sono arrivata da Matteo con diverse problematiche che mi portavo da tempo (dolore fisso alla
+                            <strong>cervicale e rigidità al collo</strong>, dolore alla mandibola per bruxismo , mal di
+                            testa e mal di pancia
+                            frequente).
+                            <strong>Devo davvero ringraziarlo, ad oggi mi sento molto meglio</strong>. Oltre a trattarmi
+                            mi
+                            ha dato dei
+                            consigli pratici ed esercizi mirati per <strong>le mie problematiche che sono migliorate
+                                notevolmente,
+                                alcune completamente sparite.</strong>
+                            Lo consiglio vivamente, un vero professionista!
+                        </p>
+
+                        <div class="review-author">
+                            <strong>Stefania</strong>
+                        </div>
+
+                    </article>
+
+                    <!-- Review 02 -->
+                    <article class="review-card">
+
+                        <div class="review-avatar-card">
+                            <img src="images/francesca-paziente-osteofisiorehab.avif" alt="Francesca, paziente del Dott. Matteo Fiorentini, 
+                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
+                                decoding="async">
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★ </div>
+
+                        <p class="review-text">
+                            Matteo è fantastico e molto professionale. Mi ha risolto il problema in poche sedute.
+                            <strong>Un
+                                plauso
+                                speciale anche al suo staff consigliatissimo.</strong>
+                        </p>
+
+                        <div class="review-author">
+                            <strong>Francesca</strong>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Review 03 -->
+                    <article class="review-card">
+
+                        <div class="review-avatar-card">
+                            <img src="images/simone-paziente-osteofisiorehab.avif" alt="Simone, paziente del Dott. Matteo Fiorentini, 
                                         autore di una recensione su OsteoFisio - Rehab" loading="lazy"
                                 decoding="async">
                         </div>
 
-                        <div class="testimonial-content">
+                        <div class="review-stars">
+                            ★★★★★ </div>
 
-                            <!-- Replace this text with a real Google review -->
-                            <p class="testimonial-quote">
-                                “ <strong class="highlight">Matteo è un professionista esemplare</strong>. Parte
-                                dall'ascolto e da check approfonditi prima
-                                di
-                                intervenire attraverso un approccio olistico.
-                                Dopo poco tempo ho ottenuto dei risultati tangibili. Una sicurezza! ”
+                        <p class="review-text">
+                            Matteo è un professionista serio e molto preparato. Mi segue ormai da più di due anni ed è
+                            per
+                            me insostituibile, accompagnandomi nella gestione dei diversi sport che pratico. <strong>Il
+                                suo
+                                approccio all'infortunio/problema è totalmente diverso dagli altri</strong>, lavorando
+                            anche
+                            su aspetti
+                            quali fiducia nel lavoro e nel percorso da svolgere insieme.
+                        </p>
 
-                            </p>
+                        <div class="review-author">
+                            <strong>Simone</strong>
+                        </div>
 
-                            <div class="testimonial-meta">
+                    </article>
 
-                                <strong>Francesco</strong>
+                    <!-- Review 01 -->
+                    <article class="review-card">
 
-                                <div class="testimonial-stars">
-                                    ★★★★★
+                        <div class="review-avatar-card">
+                            <img src="images/valentina-paziente-osteofiosiorehab.avif" alt="Valentina, paziente del Dott. Matteo Fiorentini, 
+                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
+                                decoding="async">
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+                            Sono arrivata da Matteo a seguito di un dolore fortissimo che partiva da collo e terminava
+                            sul
+                            braccio sinistro, creandomi del
+                            Formicolio e una difficoltà in qualsivoglia movimento. Dopo una breve anamnesi a voce mi ha
+                            iniziato a manipolare e ho provato sollievo quasi immediato. Il formicolio che raggiungeva
+                            la
+                            mano è sparito subito.
+                            <strong>La mia esperienza è stata davvero molto positiva, Matteo è un professionista con il
+                                sorriso e
+                                una grande empatia.</strong> Con le sue manovre riesce a capire anche le emozioni
+                            profonde
+                            e/o gli
+                            alimenti che possono condizionare muscoli e creare contratture.
+                            Lo raccomando al 100% soprattutto a chi cerca una figura professionale esperta ma molto alla
+                            mano.
+                        </p>
+
+                        <div class="review-author">
+                            <strong>Valentina</strong>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Review 02 -->
+                    <article class="review-card">
+
+                        <div class="review-avatar-card">
+                            <img src="images/gianmarco-paziente-osteofisiorehab.avif" alt="Gianmarco, paziente del Dott. Matteo Fiorentini, 
+                                        autore di una recensione su OsteoFisio - Rehab" loading="lazy"
+                                decoding="async">
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★ </div>
+
+                        <p class="review-text">
+                            Dopo diversi pareri ho avuto la fortuna di essere trattato da Matteo. Arrivavo da situazioni
+                            complicate sia causa di una scoliosi sia problemi di natura muscolare. <strong>I trattamenti
+                                sono di
+                                qualità e l’individuazione del problema è sempre ben precisa.</strong>
+                            Matteo è una di quelle persone che riesce a garantirti un percorso che in maniera veloce
+                            porta
+                            risultati e <strong>riporta l’atleta alla performance sportiva.</strong>
+                        </p>
+
+                        <div class="review-author">
+                            <strong>Gianmarco</strong>
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Review 03 -->
+                    <article class="review-card">
+
+                        <div class="review-avatar-card">
+                            <img src="images/massimiliano-paziente-osteofisiorehab.avif" alt="Massimiliano, paziente del Dott. Matteo Fiorentini, 
+                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
+                                decoding="async">
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★ </div>
+
+                        <p class="review-text">
+                            Sono andato da Matteo circa 5 anni fa per la <strong>riabilitazione dopo l’operazione al
+                                legamento
+                                crociato anteriore del ginocchio</strong>, su consiglio di un amico di famiglia.
+                            Fin dai primi incontri mi sono sentito in ottime mani: professionale, attento e sempre
+                            chiaro
+                            nelle spiegazioni.
+
+                            <strong>Grazie al suo lavoro ho recuperato perfettamente, permettendomi di praticare
+                                nuovamente
+                                attività
+                                sportiva ad alta intensità.</strong>
+
+                            Da allora continuo ad andare da lui all’evenienza.
+                            Il fatto che ci torni regolarmente dice tutto: mi fido ciecamente e lo consiglio senza
+                            esitazione a chiunque abbia bisogno di un fisioterapista competente e serio.
+                            Grazie Matteo!
+                        </p>
+
+                        <div class="review-author">
+                            <strong>Massimiliano</strong>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- Bottom CTA -->
+                <div class="reviews-footer">
+
+                    <div class="reviews-score">
+
+                        <div class="google-rating" style="border-right: none;">
+
+                            <div class="google-logo">
+                                <img src="images/recensioni-google-dott-matteo-fiorentini.avif"
+                                    alt="Recensioni Google del Dott. Matteo Fiorentini, fisioterapista e osteopata presso OsteoFisio - Rehab."
+                                    loading="lazy" decoding="async">
+                            </div>
+
+                            <div class="google-rating-content">
+                                <div class="rating-top">
+                                    <span class="rating-number">5.0</span>
+
+                                    <span class="stars">
+                                        ★★★★★
+                                    </span>
                                 </div>
 
-                                <span class="testimonial-role">
-                                    Cliente OsteoFisio-Rehab
-                                </span>
-
+                                <a href="#" class="google-reviews-link" target="_blank" rel="noopener">
+                                    70 recensioni su Google
+                                </a>
                             </div>
 
                         </div>
 
                     </div>
+                    <a href="#" class="reviews-button" target="_blank" rel="noopener">
+                        <span>Leggi tutte le recensioni</span>
+                        <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="about-section" id="about">
+
+            <!-- Main content -->
+            <div class="about-grid">
+
+                <!-- Left: Images -->
+                <div class="about-gallery">
+
+                    <div class="about-image about-image-main">
+                        <img src="images/matteo-fiorentini-osteopatia-paziente.avif"
+                            alt="Matteo Fiorentini e un suo paziente." loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="about-image about-image-secondary">
+                        <img src="images/matteo-fiorentini-trattamento-gomito.avif"
+                            alt="Il Dott. Matteo Fiorentini esegue un trattamento manuale al gomito di un suo cliente."
+                            loading="lazy" decoding="async">
+                    </div>
+
+                </div>
+
+                <!-- Right: Text -->
+                <div class="about-content">
+
+                    <span class="about-label-span">Perché scegliere OsteoFisio - Rehab?</span>
+
+                    <h2>
+                        Un approccio diverso, pensato per te.
+                    </h2>
+
+                    <p class="about-description">
+                        So quanto il dolore o un infortunio possano limitare la tua vita e le tue passioni. Per questo,
+                        la
+                        prima visita è dedicata all'<strong>ascolto e alla comprensione del problema</strong>, così da
+                        costruire un percorso
+                        riabilitativo su misura.
+                    </p>
+
+                    <p class="about-description">
+                        Niente schemi preimpostati o macchinari utilizzati senza uno scopo preciso: ogni fase del
+                        trattamento ha un obiettivo chiaro. Ti spiegherò cosa faremo e perché, fornendoti gli strumenti
+                        per
+                        recuperare la libertà di movimento nel tempo.
+                    </p>
+
+
+                    <!-- Key points -->
+                    <ul class="about-features">
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Empatia e ascolto</strong>: ascoltando le tue esigenze e comprendendo le tue
+                                difficoltà.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Percorso personalizzato</strong>: adattando il trattamento alle tue condizioni e
+                                ai
+                                tuoi obiettivi. </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Esperienza sul campo</strong>:
+                                mettendo a disposizione competenze maturate anche con atleti e società sportive.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                <strong>Trasparenza e chiarezza</strong>:
+                                spiegandoti ogni fase del trattamento e gli obiettivi da raggiungere.
+                            </span>
+                        </li>
+
+                    </ul>
+
+                    <div class="hero-buttons" id="hero-buttons-about">
+                        <div class="btn-whatsapp" id="btn-about-primary">
+                            <a href="#" class="btn-primary">Prenota una visita</a>
+                        </div>
+                        <div class="btn-secondary" id="btn-about-secondary">
+                            <a href="#">Scopri le patologie trattate</a>
+                            <i class="bx bx-down-arrow-alt"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Testimonial -->
+
 
                 </div>
 
             </div>
 
-        </div>
 
+        </section>
 
-    </section>
+        <section class="conditions-section" id="patologie">
 
-    <section class="process-section" id="approccio">
+            <div class="conditions-container">
 
-        <div class="process-container">
+                <div class="process-header" style="margin-bottom: 40px;">
+                    <span class="process-eyebrow">le principali patologie trattate</span>
 
-            <div class="process-header">
-                <span class="process-eyebrow">IL PERCORSO CON OSTEOFISIO - REHAB</span>
+                    <h2>
+                        Ti aiutiamo a recuperare
+                        movimento e funzionalità.
+                    </h2>
 
-                <h2>
-                    Un percorso pensato per i tuoi obiettivi
-                </h2>
-
-                <p>
-                    Il Dott. Matteo Fiorentini unisce
-                    valutazione, competenza ed esperienza per individuare
-                    il trattamento più adatto alle tue necessità.
-                </p>
-            </div>
-
-            <div class="process-steps">
-
-                <article class="process-card step-1">
-                    <div class="step-number">01</div>
-                    <h3>Ascolto e valutazione</h3>
-                    <p>
-                        Partiamo dalla tua storia, dai sintomi e dalle difficoltà
-                        quotidiane per comprendere le tue necessità e definire
-                        gli obiettivi del percorso.
+                    <p>Scopri le principali patologie trattate dal Dott. Fiorentini e i percorsi dedicati per ritrovare
+                        il
+                        tuo benessere e la libertà di movimento.
                     </p>
-                </article>
-
-                <article class="process-card step-2">
-                    <div class="step-number">02</div>
-                    <h3>Un programma personalizzato</h3>
-                    <p>
-                        Sulla base della valutazione, definiamo un programma
-                        calibrato sulla tua condizione fisica, sulle tue esigenze
-                        e sugli obiettivi che vuoi raggiungere.
-                    </p>
-                </article>
-
-                <article class="process-card step-3">
-                    <div class="step-number">03</div>
-                    <h3>Trattamento e recupero</h3>
-                    <p>
-                        Attraverso il trattamento manuale e l'esercizio
-                        terapeutico lavoriamo sulle limitazioni emerse,
-                        adattando il percorso ai tuoi progressi.
-                    </p>
-                </article>
-
-                <article class="process-card step-4">
-                    <div class="step-number">04</div>
-                    <h3>Ritorno alla quotidianità</h3>
-                    <p>
-                        Lavoriamo per recuperare movimento e autonomia,
-                        aiutandoti a tornare gradualmente alle attività
-                        quotidiane, lavorative o sportive.
-                    </p>
-                </article>
-
-            </div>
 
 
-            <div class="process-footer">
-
-                <p>
-                    Ogni percorso viene adattato alla tua situazione,
-                    ai tuoi obiettivi e ai progressi che facciamo insieme.
-                </p>
-
-                <div class="btn-whatsapp" id="btn-whatsapp-nav">
-                    <i class="bx bxl-whatsapp"></i>
-                    <a href="#" class="btn-primary">Prenota una valutazione</a>
                 </div>
 
-            </div>
+                <div class="conditions-grid">
 
-        </div>
+                    <!-- Cervicale -->
+                    <a href="/cervicale" class="condition-card">
 
-    </section>
+                        <div class="condition-image">
+                            <img src="images/cervicalgia.avif"
+                                alt="Dolore cervicale e tensione muscolare nella zona del collo." loading="lazy"
+                                decoding="async">
+                        </div>
 
-    <section class="reviews-section" id="recensioni">
+                        <div class="condition-content">
 
-        <div class="reviews-container">
+                            <h3>
+                                Cervicale
+                            </h3>
 
+                            <span class="condition-link">
+                                <span>Scopri i dettagli</span>
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </span>
 
-            <!-- Header -->
-            <div class="process-header" style="margin-bottom: 40px;">
-                <span class="process-eyebrow">Recensioni OsteoFisio Rehab</span>
+                        </div>
 
-                <h2 style="margin-bottom: 10px;">
-                    Alcune delle testimonianze di chi si è affidato a noi
-                </h2>
+                    </a>
 
-            </div>
+                    <!-- Post operatorio -->
+                    <a href="/riabilitazione-post-operatoria" class="condition-card">
 
-            <!-- Reviews -->
-            <div class="reviews-grid">
-
-
-                <!-- Review 01 -->
-                <article class="review-card">
-
-                    <div class="review-avatar-card">
-                        <img src="images/stefania-paziente-osteofisiorehab.avif" alt="Stefania, paziente del Dott. Matteo Fiorentini, 
-                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★
-                    </div>
-
-                    <p class="review-text">
-                        Sono arrivata da Matteo con diverse problematiche che mi portavo da tempo (dolore fisso alla
-                        <strong>cervicale e rigidità al collo</strong>, dolore alla mandibola per bruxismo , mal di
-                        testa e mal di pancia
-                        frequente).
-                        <strong>Devo davvero ringraziarlo, ad oggi mi sento molto meglio</strong>. Oltre a trattarmi mi
-                        ha dato dei
-                        consigli pratici ed esercizi mirati per <strong>le mie problematiche che sono migliorate
-                            notevolmente,
-                            alcune completamente sparite.</strong>
-                        Lo consiglio vivamente, un vero professionista!
-                    </p>
-
-                    <div class="review-author">
-                        <strong>Stefania</strong>
-                    </div>
-
-                </article>
-
-                <!-- Review 02 -->
-                <article class="review-card">
-
-                    <div class="review-avatar-card">
-                        <img src="images/francesca-paziente-osteofisiorehab.avif" alt="Francesca, paziente del Dott. Matteo Fiorentini, 
-                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★ </div>
-
-                    <p class="review-text">
-                        Matteo è fantastico e molto professionale. Mi ha risolto il problema in poche sedute. <strong>Un
-                            plauso
-                            speciale anche al suo staff consigliatissimo.</strong>
-                    </p>
-
-                    <div class="review-author">
-                        <strong>Francesca</strong>
-                    </div>
-
-                </article>
-
-
-                <!-- Review 03 -->
-                <article class="review-card">
-
-                    <div class="review-avatar-card">
-                        <img src="images/simone-paziente-osteofisiorehab.avif" alt="Simone, paziente del Dott. Matteo Fiorentini, 
-                                        autore di una recensione su OsteoFisio - Rehab" loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★ </div>
-
-                    <p class="review-text">
-                        Matteo è un professionista serio e molto preparato. Mi segue ormai da più di due anni ed è per
-                        me insostituibile, accompagnandomi nella gestione dei diversi sport che pratico. <strong>Il suo
-                            approccio all'infortunio/problema è totalmente diverso dagli altri</strong>, lavorando anche
-                        su aspetti
-                        quali fiducia nel lavoro e nel percorso da svolgere insieme.
-                    </p>
-
-                    <div class="review-author">
-                        <strong>Simone</strong>
-                    </div>
-
-                </article>
-
-                <!-- Review 01 -->
-                <article class="review-card">
-
-                    <div class="review-avatar-card">
-                        <img src="images/valentina-paziente-osteofiosiorehab.avif" alt="Valentina, paziente del Dott. Matteo Fiorentini, 
-                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★
-                    </div>
-
-                    <p class="review-text">
-                        Sono arrivata da Matteo a seguito di un dolore fortissimo che partiva da collo e terminava sul
-                        braccio sinistro, creandomi del
-                        Formicolio e una difficoltà in qualsivoglia movimento. Dopo una breve anamnesi a voce mi ha
-                        iniziato a manipolare e ho provato sollievo quasi immediato. Il formicolio che raggiungeva la
-                        mano è sparito subito.
-                        <strong>La mia esperienza è stata davvero molto positiva, Matteo è un professionista con il
-                            sorriso e
-                            una grande empatia.</strong> Con le sue manovre riesce a capire anche le emozioni profonde
-                        e/o gli
-                        alimenti che possono condizionare muscoli e creare contratture.
-                        Lo raccomando al 100% soprattutto a chi cerca una figura professionale esperta ma molto alla
-                        mano.
-                    </p>
-
-                    <div class="review-author">
-                        <strong>Valentina</strong>
-                    </div>
-
-                </article>
-
-
-                <!-- Review 02 -->
-                <article class="review-card">
-
-                    <div class="review-avatar-card">
-                        <img src="images/gianmarco-paziente-osteofisiorehab.avif" alt="Gianmarco, paziente del Dott. Matteo Fiorentini, 
-                                        autore di una recensione su OsteoFisio - Rehab" loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★ </div>
-
-                    <p class="review-text">
-                        Dopo diversi pareri ho avuto la fortuna di essere trattato da Matteo. Arrivavo da situazioni
-                        complicate sia causa di una scoliosi sia problemi di natura muscolare. <strong>I trattamenti
-                            sono di
-                            qualità e l’individuazione del problema è sempre ben precisa.</strong>
-                        Matteo è una di quelle persone che riesce a garantirti un percorso che in maniera veloce porta
-                        risultati e <strong>riporta l’atleta alla performance sportiva.</strong>
-                    </p>
-
-                    <div class="review-author">
-                        <strong>Gianmarco</strong>
-                    </div>
-
-                </article>
-
-
-
-                <!-- Review 03 -->
-                <article class="review-card">
-
-                    <div class="review-avatar-card">
-                        <img src="images/massimiliano-paziente-osteofisiorehab.avif" alt="Massimiliano, paziente del Dott. Matteo Fiorentini, 
-                                        autrice di una recensione su OsteoFisio - Rehab" loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★ </div>
-
-                    <p class="review-text">
-                        Sono andato da Matteo circa 5 anni fa per la <strong>riabilitazione dopo l’operazione al
-                            legamento
-                            crociato anteriore del ginocchio</strong>, su consiglio di un amico di famiglia.
-                        Fin dai primi incontri mi sono sentito in ottime mani: professionale, attento e sempre chiaro
-                        nelle spiegazioni.
-
-                        <strong>Grazie al suo lavoro ho recuperato perfettamente, permettendomi di praticare nuovamente
-                            attività
-                            sportiva ad alta intensità.</strong>
-
-                        Da allora continuo ad andare da lui all’evenienza.
-                        Il fatto che ci torni regolarmente dice tutto: mi fido ciecamente e lo consiglio senza
-                        esitazione a chiunque abbia bisogno di un fisioterapista competente e serio.
-                        Grazie Matteo!
-                    </p>
-
-                    <div class="review-author">
-                        <strong>Massimiliano</strong>
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-            <!-- Bottom CTA -->
-            <div class="reviews-footer">
-
-                <div class="reviews-score">
-
-                    <div class="google-rating" style="border-right: none;">
-
-                        <div class="google-logo">
-                            <img src="images/recensioni-google-dott-matteo-fiorentini.avif"
-                                alt="Recensioni Google del Dott. Matteo Fiorentini, fisioterapista e osteopata presso OsteoFisio - Rehab."
+                        <div class="condition-image">
+                            <img src="images/riabilitazione-post-operatoria.avif"
+                                alt="Riabilitazione post-operatoria e recupero funzionale dopo un intervento al ginocchio."
                                 loading="lazy" decoding="async">
                         </div>
 
-                        <div class="google-rating-content">
-                            <div class="rating-top">
-                                <span class="rating-number">5.0</span>
+                        <div class="condition-content">
 
-                                <span class="stars">
-                                    ★★★★★
-                                </span>
+                            <h3>
+                                Riabilitazione<br>
+                                post-operatoria
+                            </h3>
+
+                            <span class="condition-link">
+                                <span>Scopri i dettagli</span>
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Sport -->
+                    <a href="/fisioterapia-recupero-sportivo" class="condition-card">
+
+                        <div class="condition-image">
+                            <img src="images/fisioterapia-e-recupero-sportivo-500px.avif"
+                                alt="Recupero sportivo con trattamento manuale e mobilizzazione dell'arto inferiore."
+                                loading="lazy" decoding="async">
+                        </div>
+
+                        <div class="condition-content">
+
+                            <h3>
+                                Fisioterapia e<br>
+                                recupero sportivo
+                            </h3>
+
+                            <span class="condition-link">
+                                <span>Scopri i dettagli</span>
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Lombalgia -->
+                    <a href="/lombalgia-mal-di-schiena" class="condition-card">
+
+                        <div class="condition-image">
+                            <img src="images/lombalgia-mal-di-schiena.avif"
+                                alt="Dolore lombare e tensione muscolare nella parte inferiore della schiena."
+                                loading="lazy" decoding="async">
+                        </div>
+
+                        <div class="condition-content">
+
+                            <h3>
+                                Lombalgia e <br> mal di schiena
+                            </h3>
+
+                            <span class="condition-link">
+                                <span>Scopri i dettagli</span>
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="blog-section" id="blog">
+
+            <div class="blog-container">
+                <div class="process-header" style="margin-bottom: 40px;">
+
+                    <h2>
+                        Blog e approfondimenti
+                    </h2>
+
+                    <p>
+                        Approfondimenti, consigli pratici e aggiornamenti per prenderti
+                        cura del tuo corpo, migliorare il movimento e conoscere meglio
+                        la fisioterapia e l’osteopatia.
+                    </p>
+                </div>
+
+                <div class="container-article">
+                    <!-- Featured article -->
+
+                    <article class="featured-article">
+
+                        <a href="scoliosi.html" class="featured-image">
+                            <img src="images/scoliosi.avif"
+                                alt="Scoliosi: cause, sintomi e trattamenti fisioterapici per la salute della schiena"
+                                loading="lazy" decoding="async">
+                        </a>
+
+
+                        <div class="featured-content">
+
+                            <span class="article-category">
+                                Colonna vertebrale
+                            </span>
+
+                            <div class="article-meta">
+                                Agosto 2026 · Lettura 6 min
                             </div>
 
-                            <a href="#" class="google-reviews-link" target="_blank" rel="noopener">
-                                70 recensioni su Google
+                            <h3>
+                                Che cos'è la scoliosi e come riconoscerla
+                            </h3>
+
+                            <p>
+                                Scopri cos'è la <strong>scoliosi</strong>, quali sono i sintomi, come viene
+                                diagnosticata e
+                                quale ruolo può
+                                avere la fisioterapia nella gestione e nel controllo della curva.
+                            </p>
+
+                            <a href="scoliosi.html" class="article-link">
+                                <span class="condition-link">
+                                    <span>Leggi l'articolo</span>
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                </span>
                             </a>
+
                         </div>
 
-                    </div>
+                    </article>
+
+                    <article class="featured-article">
+
+                        <a href="pubalgia.html" class="featured-image">
+                            <img src="images/pubalgia.avif"
+                                alt="Pubalgia: sintomi, cause e trattamenti fisioterapici per il dolore inguinale"
+                                loading="lazy" decoding="async">
+                        </a>
+
+
+                        <div class="featured-content">
+
+                            <span class="article-category">
+                                Infortuni sportivi
+                            </span>
+
+                            <div class="article-meta">
+                                Agosto 2026 · Lettura 6 min
+                            </div>
+
+                            <h3>
+                                Pubalgia: come riconoscerla e quanto tempo serve per guarire
+                            </h3>
+
+                            <p>
+                                Dolore all'inguine durante lo sport? Scopri cos'è la <strong>pubalgia</strong>, quali
+                                sono
+                                le cause, i tempi
+                                di recupero e come la fisioterapia può aiutarti.
+                            </p>
+
+                            <a href="pubalgia.html" class="article-link">
+                                <span class="condition-link">
+                                    <span>Leggi l'articolo</span>
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="featured-article">
+
+                        <a href="distorsione-alla-caviglia.a" class="featured-image">
+                            <img src="images/distorsione-caviglia.avif"
+                                alt="Distorsione alla caviglia: sintomi, trattamento e recupero della mobilità."
+                                loading="lazy" decoding="async">
+                        </a>
+
+
+                        <div class="featured-content">
+
+                            <span class="article-category">
+                                Infortuni sportivi
+                            </span>
+
+                            <div class="article-meta">
+                                luglio 2026 · Lettura 6 min
+                            </div>
+
+                            <h3>
+                                Distorsione alla caviglia: cosa fare e come recuperare
+                            </h3>
+
+                            <p>
+                                Hai preso una <strong>distorsione alla caviglia</strong>? Scopri cosa fare, quanto dura
+                                il
+                                recupero e come la
+                                fisioterapia può aiutarti a ritrovare stabilità e movimento.
+                            </p>
+
+                            <a href="distorsione-alla-caviglia.html" class="article-link">
+                                <span class="condition-link">
+                                    <span>Leggi l'articolo</span>
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
-                <a href="#" class="reviews-button" target="_blank" rel="noopener">
-                    <span>Leggi tutte le recensioni</span>
+
+
+            </div>
+            <div class="process-footer">
+
+                <div class="btn-whatsapp" id="btn-whatsapp-nav">
+                    <a href="#" class="btn-primary">Vai al blog</a>
                     <i class="bx bx-right-arrow-alt"></i>
-                </a>
-            </div>
-
-
-
-
-        </div>
-
-        </div>
-
-    </section>
-
-    <section class="about-section" id="about">
-
-        <!-- Main content -->
-        <div class="about-grid">
-
-            <!-- Left: Images -->
-            <div class="about-gallery">
-
-                <div class="about-image about-image-main">
-                    <img src="images/matteo-fiorentini-osteopatia-paziente.avif"
-                        alt="Matteo Fiorentini e un suo paziente." loading="lazy" decoding="async">
-                </div>
-
-                <div class="about-image about-image-secondary">
-                    <img src="images/matteo-fiorentini-trattamento-gomito.avif"
-                        alt="Il Dott. Matteo Fiorentini esegue un trattamento manuale al gomito di un suo cliente."
-                        loading="lazy" decoding="async">
-                </div>
-
-            </div>
-
-            <!-- Right: Text -->
-            <div class="about-content">
-
-                <span class="about-label-span">Perché scegliere OsteoFisio - Rehab?</span>
-
-                <h2>
-                    Un approccio diverso, pensato per te.
-                </h2>
-
-                <p class="about-description">
-                    So quanto il dolore o un infortunio possano limitare la tua vita e le tue passioni. Per questo, la
-                    prima visita è dedicata all'<strong>ascolto e alla comprensione del problema</strong>, così da
-                    costruire un percorso
-                    riabilitativo su misura.
-                </p>
-
-                <p class="about-description">
-                    Niente schemi preimpostati o macchinari utilizzati senza uno scopo preciso: ogni fase del
-                    trattamento ha un obiettivo chiaro. Ti spiegherò cosa faremo e perché, fornendoti gli strumenti per
-                    recuperare la libertà di movimento nel tempo.
-                </p>
-
-
-                <!-- Key points -->
-                <ul class="about-features">
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Empatia e ascolto</strong>: ascoltando le tue esigenze e comprendendo le tue
-                            difficoltà.
-                        </span>
-                    </li>
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Percorso personalizzato</strong>: adattando il trattamento alle tue condizioni e ai
-                            tuoi obiettivi. </span>
-                    </li>
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Esperienza sul campo</strong>:
-                            mettendo a disposizione competenze maturate anche con atleti e società sportive.
-                        </span>
-                    </li>
-
-                    <li>
-                        <span class="feature-check">✓</span>
-                        <span>
-                            <strong>Trasparenza e chiarezza</strong>:
-                            spiegandoti ogni fase del trattamento e gli obiettivi da raggiungere.
-                        </span>
-                    </li>
-
-                </ul>
-
-                <div class="hero-buttons" id="hero-buttons-about">
-                    <div class="btn-whatsapp" id="btn-about-primary">
-                        <a href="#" class="btn-primary">Prenota una visita</a>
-                    </div>
-                    <div class="btn-secondary" id="btn-about-secondary">
-                        <a href="#">Scopri le patologie trattate</a>
-                        <i class="bx bx-down-arrow-alt"></i>
-                    </div>
 
                 </div>
 
-
-                <!-- Testimonial -->
-
-
             </div>
 
-        </div>
+        </section>
 
+        <section class="final-action-section">
 
-    </section>
+            <div class="final-action-container">
 
-    <section class="conditions-section" id="patologie">
+                <div class="process-header" style="margin-bottom: 40px;">
+                    <span class="process-eyebrow">Contatti</span>
 
-        <div class="conditions-container">
+                    <h2>
+                        Prenota la tua prima valutazione
+                    </h2>
 
-            <div class="process-header" style="margin-bottom: 40px;">
-                <span class="process-eyebrow">le principali patologie trattate</span>
-
-                <h2>
-                    Ti aiutiamo a recuperare
-                    movimento e funzionalità.
-                </h2>
-
-                <p>Scopri le principali patologie trattate dal Dott. Fiorentini e i percorsi dedicati per ritrovare il
-                    tuo benessere e la libertà di movimento.
-                </p>
-
-
-            </div>
-
-            <div class="conditions-grid">
-
-                <!-- Cervicale -->
-                <a href="/cervicale" class="condition-card">
-
-                    <div class="condition-image">
-                        <img src="images/cervicalgia.avif"
-                            alt="Dolore cervicale e tensione muscolare nella zona del collo." loading="lazy"
-                            decoding="async">
-                    </div>
-
-                    <div class="condition-content">
-
-                        <h3>
-                            Cervicale
-                        </h3>
-
-                        <span class="condition-link">
-                            <span>Scopri i dettagli</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </span>
-
-                    </div>
-
-                </a>
-
-                <!-- Post operatorio -->
-                <a href="/riabilitazione-post-operatoria" class="condition-card">
-
-                    <div class="condition-image">
-                        <img src="images/riabilitazione-post-operatoria.avif"
-                            alt="Riabilitazione post-operatoria e recupero funzionale dopo un intervento al ginocchio."
-                            loading="lazy" decoding="async">
-                    </div>
-
-                    <div class="condition-content">
-
-                        <h3>
-                            Riabilitazione<br>
-                            post-operatoria
-                        </h3>
-
-                        <span class="condition-link">
-                            <span>Scopri i dettagli</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </span>
-
-                    </div>
-
-                </a>
-
-                <!-- Sport -->
-                <a href="/fisioterapia-recupero-sportivo" class="condition-card">
-
-                    <div class="condition-image">
-                        <img src="images/fisioterapia-e-recupero-sportivo-500px.avif"
-                            alt="Recupero sportivo con trattamento manuale e mobilizzazione dell'arto inferiore."
-                            loading="lazy" decoding="async">
-                    </div>
-
-                    <div class="condition-content">
-
-                        <h3>
-                            Fisioterapia e<br>
-                            recupero sportivo
-                        </h3>
-
-                        <span class="condition-link">
-                            <span>Scopri i dettagli</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </span>
-
-                    </div>
-
-                </a>
-
-                <!-- Lombalgia -->
-                <a href="/lombalgia-mal-di-schiena" class="condition-card">
-
-                    <div class="condition-image">
-                        <img src="images/lombalgia-mal-di-schiena.avif"
-                            alt="Dolore lombare e tensione muscolare nella parte inferiore della schiena."
-                            loading="lazy" decoding="async">
-                    </div>
-
-                    <div class="condition-content">
-
-                        <h3>
-                            Lombalgia e <br> mal di schiena
-                        </h3>
-
-                        <span class="condition-link">
-                            <span>Scopri i dettagli</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </span>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="blog-section" id="blog">
-
-        <div class="blog-container">
-            <div class="process-header" style="margin-bottom: 40px;">
-
-                <h2>
-                    Blog e approfondimenti
-                </h2>
-
-                <p>
-                    Approfondimenti, consigli pratici e aggiornamenti per prenderti
-                    cura del tuo corpo, migliorare il movimento e conoscere meglio
-                    la fisioterapia e l’osteopatia.
-                </p>
-            </div>
-
-            <div class="container-article">
-                <!-- Featured article -->
-
-                <article class="featured-article">
-
-                    <a href="scoliosi.html" class="featured-image">
-                        <img src="images/scoliosi.avif"
-                            alt="Scoliosi: cause, sintomi e trattamenti fisioterapici per la salute della schiena"
-                            loading="lazy" decoding="async">
-                    </a>
-
-
-                    <div class="featured-content">
-
-                        <span class="article-category">
-                            Colonna vertebrale
-                        </span>
-
-                        <div class="article-meta">
-                            Agosto 2026 · Lettura 6 min
-                        </div>
-
-                        <h3>
-                            Che cos'è la scoliosi e come riconoscerla
-                        </h3>
-
-                        <p>
-                            Scopri cos'è la <strong>scoliosi</strong>, quali sono i sintomi, come viene diagnosticata e
-                            quale ruolo può
-                            avere la fisioterapia nella gestione e nel controllo della curva.
-                        </p>
-
-                        <a href="scoliosi.html" class="article-link">
-                            <span class="condition-link">
-                                <span>Leggi l'articolo</span>
-                                <i class="bx bx-right-arrow-alt"></i>
-                            </span>
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <article class="featured-article">
-
-                    <a href="pubalgia.html" class="featured-image">
-                        <img src="images/pubalgia.avif"
-                            alt="Pubalgia: sintomi, cause e trattamenti fisioterapici per il dolore inguinale"
-                            loading="lazy" decoding="async">
-                    </a>
-
-
-                    <div class="featured-content">
-
-                        <span class="article-category">
-                            Infortuni sportivi
-                        </span>
-
-                        <div class="article-meta">
-                            Agosto 2026 · Lettura 6 min
-                        </div>
-
-                        <h3>
-                            Pubalgia: come riconoscerla e quanto tempo serve per guarire
-                        </h3>
-
-                        <p>
-                            Dolore all'inguine durante lo sport? Scopri cos'è la <strong>pubalgia</strong>, quali sono
-                            le cause, i tempi
-                            di recupero e come la fisioterapia può aiutarti.
-                        </p>
-
-                        <a href="pubalgia.html" class="article-link">
-                            <span class="condition-link">
-                                <span>Leggi l'articolo</span>
-                                <i class="bx bx-right-arrow-alt"></i>
-                            </span>
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <article class="featured-article">
-
-                    <a href="distorsione-alla-caviglia.a" class="featured-image">
-                        <img src="images/distorsione-caviglia.avif"
-                            alt="Distorsione alla caviglia: sintomi, trattamento e recupero della mobilità."
-                            loading="lazy" decoding="async">
-                    </a>
-
-
-                    <div class="featured-content">
-
-                        <span class="article-category">
-                            Infortuni sportivi
-                        </span>
-
-                        <div class="article-meta">
-                            luglio 2026 · Lettura 6 min
-                        </div>
-
-                        <h3>
-                            Distorsione alla caviglia: cosa fare e come recuperare
-                        </h3>
-
-                        <p>
-                            Hai preso una <strong>distorsione alla caviglia</strong>? Scopri cosa fare, quanto dura il
-                            recupero e come la
-                            fisioterapia può aiutarti a ritrovare stabilità e movimento.
-                        </p>
-
-                        <a href="distorsione-alla-caviglia.html" class="article-link">
-                            <span class="condition-link">
-                                <span>Leggi l'articolo</span>
-                                <i class="bx bx-right-arrow-alt"></i>
-                            </span>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-        </div>
-        <div class="process-footer">
-
-            <div class="btn-whatsapp" id="btn-whatsapp-nav">
-                <a href="#" class="btn-primary">Vai al blog</a>
-                <i class="bx bx-right-arrow-alt"></i>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="final-action-section">
-
-        <div class="final-action-container">
-
-            <div class="process-header" style="margin-bottom: 40px;">
-                <span class="process-eyebrow">Contatti</span>
-
-                <h2>
-                    Prenota la tua prima valutazione
-                </h2>
-
-                <p>
-                    Hai un dolore, fai fatica a muoverti come vorresti o vuoi recuperare dopo un infortunio?
-                    Scrivimi su WhatsApp o chiamami direttamente.
-                </p>
-            </div>
-            <!-- 
+                    <p>
+                        Hai un dolore, fai fatica a muoverti come vorresti o vuoi recuperare dopo un infortunio?
+                        Scrivimi su WhatsApp o chiamami direttamente.
+                    </p>
+                </div>
+                <!-- 
             <div class="final-action-buttons">
 
                 <a href="https://wa.me/393XXXXXXXXX?text=Ciao%2C%20vorrei%20prenotare%20una%20valutazione."
@@ -1179,24 +1198,26 @@
                 </a>
 
             </div> -->
-            <div class="hero-buttons">
-                <div class="btn-whatsapp">
-                    <i class="bx bxl-whatsapp"></i>
-                    <a href="#" class="btn-primary">Prenota su whatsapp</a>
+                <div class="hero-buttons">
+                    <div class="btn-whatsapp">
+                        <i class="bx bxl-whatsapp"></i>
+                        <a href="#" class="btn-primary">Prenota su whatsapp</a>
+                    </div>
+
+                    <div class="btn-secondary">
+                        <i class="bx bxs-phone-call"></i>
+
+                        <a href="#">Chiama ora</a>
+                    </div>
                 </div>
 
-                <div class="btn-secondary">
-                    <i class="bx bxs-phone-call"></i>
-
-                    <a href="#">Chiama ora</a>
-                </div>
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
-    <footer class="rehab-footer">
+    <footer class="rehab-footer" role="contentinfo">
 
         <div class="rehab-footer-inner">
 
@@ -1370,17 +1391,6 @@
 
 </body>
 <script>
-    // const navbar = document.querySelector('.navbar');
-
-    // window.addEventListener('scroll', () => {
-    //     if (window.scrollY > 30) {
-    //         navbar.classList.add('scrolled');
-    //     } else {
-    //         navbar.classList.remove('scrolled');
-    //     }
-    // });
-
-
     const navbar = document.querySelector(".navbar");
     const menuCheckbox = document.querySelector("#check");
     const mobileLinks = document.querySelectorAll(".menu-links a");
