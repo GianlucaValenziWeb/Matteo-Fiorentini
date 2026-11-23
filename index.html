@@ -43,10 +43,31 @@
         content="Il Dott. Matteo Fiorentini esegue una manipolazione cervicale durante una seduta di fisioterapia.">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <!-- Preload dei Google Fonts -->
+    <!-- Oswald -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap">
+    </noscript>
+
+    <!-- CSS -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
+    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-osteofisiorehab-dott-matteo-fiorentini-500px" type="image/x-icon">
 
 
 </head>
@@ -59,7 +80,7 @@
 
             <!-- LOGO -->
             <div class="navbar-left">
-                <a href="index.html" class="logo">
+                <a href="https://www.osteofisiorehab.it/" class="logo">
                     <img src="images/logo-osteofisiorehab-dott-matteo-fiorentini.png"
                         alt="Logo OsteoFisio - Rehab, studio di fisioterapia e osteopatia del Dott. Matteo Fiorentini."
                         id="logo-lungo" loading="eager" decoding="sync" fetchpriority="high">
@@ -72,7 +93,7 @@
             <!-- MENU DESKTOP -->
             <nav class="navbar-center">
 
-                <a href="chi-siamo.html">Chi sono</a>
+                <a href="chi-sono">Chi sono</a>
 
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">
@@ -82,33 +103,33 @@
                     </a>
 
                     <div class="nav-dropdown-menu">
-                        <a href="cervicale.html">Cervicale</a>
-                        <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
-                        <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
-                        <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                        <a href="cervicale">Cervicale</a>
+                        <a href="lombalgia-e-mal-di-schiena">Lombalgia / mal di schiena</a>
+                        <a href="riabilitazione-post-operatoria">Riabilitazione post-operatoria</a>
+                        <a href="fisioterapia-e-recupero-sportivo">Fisioterapia e recupero sportivo</a>
                     </div>
                 </div>
 
-                <a href="#recensioni">Recensioni</a>
-                <a href="blog.html">Blog</a>
-                <a href="contatti.html">Contatti</a>
+                <a href="https://www.osteofisiorehab.it/#recensioni">Recensioni</a>
+                <a href="blog">Blog</a>
+                <a href="contatti">Contatti</a>
 
             </nav>
 
             <!-- CONTATTI SEMPRE VISIBILI -->
             <div class="navbar-right">
 
-                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp">
+                <a href="https://wa.me/+393281285060" class="btn-whatsapp" aria-label="Prenota su WhatsApp">
                     <i class="bx bxl-whatsapp"></i>
                     <span>Prenota su Whatsapp</span>
                 </a>
-                <a href="#" class="btn-whatsapp" aria-label="Prenota su WhatsApp" style="display: none;"
-                    id="btn-whatsapp-500px">
+                <a href="https://wa.me/+393281285060" class="btn-whatsapp" aria-label="Prenota su WhatsApp"
+                    style="display: none;" id="btn-whatsapp-500px">
                     <i class="bx bxl-whatsapp"></i>
                     <span>Contattami</span>
                 </a>
 
-                <a href="#" class="btn-secondary" aria-label="Chiama">
+                <a href="tel:+393281285060" class="btn-secondary" aria-label="Chiama">
                     <i class="bx bxs-phone-call"></i>
                     <span>Chiama</span>
                 </a>
@@ -130,8 +151,8 @@
                 <div class="menu-content">
 
                     <nav class="menu-links">
-                        <a href="index.html">Home</a>
-                        <a href="chi-sono.html">Chi sono</a>
+                        <a href="https://www.osteofisiorehab.it/">Home</a>
+                        <a href="chi-sono">Chi sono</a>
 
                         <!-- PATOLOGIE CON APERTURA A TOCCO -->
                         <div class="mobile-dropdown">
@@ -144,17 +165,17 @@
                             </label>
 
                             <div class="mobile-dropdown-links">
-                                <a href="cervicale.html">Cervicale</a>
-                                <a href="lombalgia-e-mal-di-schiena.html">Lombalgia / mal di schiena</a>
-                                <a href="riabilitazione-post-operatoria.html">Riabilitazione post-operatoria</a>
-                                <a href="fisioterapia-e-recupero-sportivo.html">Fisioterapia e recupero sportivo</a>
+                                <a href="cervicale">Cervicale</a>
+                                <a href="lombalgia-e-mal-di-schiena">Lombalgia / mal di schiena</a>
+                                <a href="riabilitazione-post-operatoria">Riabilitazione post-operatoria</a>
+                                <a href="fisioterapia-e-recupero-sportivo">Fisioterapia e recupero sportivo</a>
                             </div>
 
                         </div>
 
-                        <a href="#recensioni">Recensioni</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contatti.html">Contatti</a>
+                        <a href="https://www.osteofisiorehab.it/#recensioni">Recensioni</a>
+                        <a href="blog">Blog</a>
+                        <a href="contatti">Contatti</a>
 
                     </nav>
 
@@ -185,12 +206,12 @@
                     <div class="hero-buttons">
                         <div class="btn-whatsapp">
                             <i class="bx bxl-whatsapp"></i>
-                            <a href="#" class="btn-primary">Prenota una valutazione</a>
+                            <a href="https://wa.me/+393281285060" class="btn-primary">Prenota una valutazione</a>
                         </div>
 
                         <div class="btn-secondary">
                             <i class="bx bxs-phone-call"></i>
-                            <a href="#">Chiama ora</a>
+                            <a href="tel:+393281285060">Chiama ora</a>
                         </div>
                     </div>
 
@@ -215,7 +236,8 @@
                                     </span>
                                 </div>
 
-                                <a href="#" class="google-reviews-link" target="_blank" rel="noopener">
+                                <a href="https://www.google.com/search?sca_esv=a72e8b939cfff0a5&rlz=1C1CHBF_enIT1140IT1140&sxsrf=AKL5yDgE8J4Ggzu5JA9Vt2MxjHysCwy53Q:1795173487421&q=recensioni+osteofisio+rehba&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c8592cZ1klVD9vZ032Q4lqvnBq-OBIidCWm8e7vfic5gOmB1t14zk_F8XIzjd0pJV3KRfj0%3D&uds=AE2AFgZtipFU90pDslEVu9o9RnyyKYL1kEhUs5lFvdP3yr1-oOzTv4zK23VgMtWVuM-SjLB1lb5tSdW6mPx32lEKvJa860-RwdZiEfvha3zTNtjpJT1B6gT54gRmRduQP9OgBEm3U5xM&sa=X&ved=2ahUKEwjBk5ywtpaYAxUmg_0HHWSAJowQ3PALegQIFBAF&biw=1536&bih=695&dpr=1.25"
+                                    class="google-reviews-link" target="_blank" rel="noopener">
                                     75 recensioni su Google
                                 </a>
                             </div>
@@ -374,10 +396,10 @@
 
                     <div class="hero-buttons" id="hero-buttons-about">
                         <div class="btn-whatsapp" id="btn-about-primary">
-                            <a href="#" class="btn-primary">Scopri di piu</a>
+                            <a href="chi-sono.html" class="btn-primary">Scopri di piu</a>
                         </div>
                         <div class="btn-secondary" id="btn-about-secondary">
-                            <a href="#">Scopri il mio approccio</a>
+                            <a href="https://www.osteofisiorehab.it/#approccio">Scopri il mio approccio</a>
                             <i class="bx bx-down-arrow-alt"></i>
                         </div>
 
@@ -508,7 +530,7 @@
 
                     <div class="btn-whatsapp" id="btn-whatsapp-nav">
                         <i class="bx bxl-whatsapp"></i>
-                        <a href="#" class="btn-primary">Prenota una valutazione</a>
+                        <a href="https://wa.me/+393281285060" class="btn-primary">Prenota una valutazione</a>
                     </div>
 
                 </div>
@@ -755,15 +777,17 @@
                                     </span>
                                 </div>
 
-                                <a href="#" class="google-reviews-link" target="_blank" rel="noopener">
-                                    70 recensioni su Google
+                                <a href="https://www.google.com/search?sca_esv=a72e8b939cfff0a5&rlz=1C1CHBF_enIT1140IT1140&sxsrf=AKL5yDgE8J4Ggzu5JA9Vt2MxjHysCwy53Q:1795173487421&q=recensioni+osteofisio+rehba&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c8592cZ1klVD9vZ032Q4lqvnBq-OBIidCWm8e7vfic5gOmB1t14zk_F8XIzjd0pJV3KRfj0%3D&uds=AE2AFgZtipFU90pDslEVu9o9RnyyKYL1kEhUs5lFvdP3yr1-oOzTv4zK23VgMtWVuM-SjLB1lb5tSdW6mPx32lEKvJa860-RwdZiEfvha3zTNtjpJT1B6gT54gRmRduQP9OgBEm3U5xM&sa=X&ved=2ahUKEwjBk5ywtpaYAxUmg_0HHWSAJowQ3PALegQIFBAF&biw=1536&bih=695&dpr=1.25"
+                                    class="google-reviews-link" target="_blank" rel="noopener">
+                                    75 recensioni su Google
                                 </a>
                             </div>
 
                         </div>
 
                     </div>
-                    <a href="#" class="reviews-button" target="_blank" rel="noopener">
+                    <a href="https://www.google.com/search?sca_esv=a72e8b939cfff0a5&rlz=1C1CHBF_enIT1140IT1140&sxsrf=AKL5yDgE8J4Ggzu5JA9Vt2MxjHysCwy53Q:1795173487421&q=recensioni+osteofisio+rehba&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c8592cZ1klVD9vZ032Q4lqvnBq-OBIidCWm8e7vfic5gOmB1t14zk_F8XIzjd0pJV3KRfj0%3D&uds=AE2AFgZtipFU90pDslEVu9o9RnyyKYL1kEhUs5lFvdP3yr1-oOzTv4zK23VgMtWVuM-SjLB1lb5tSdW6mPx32lEKvJa860-RwdZiEfvha3zTNtjpJT1B6gT54gRmRduQP9OgBEm3U5xM&sa=X&ved=2ahUKEwjBk5ywtpaYAxUmg_0HHWSAJowQ3PALegQIFBAF&biw=1536&bih=695&dpr=1.25"
+                        class="reviews-button" target="_blank" rel="noopener">
                         <span>Leggi tutte le recensioni</span>
                         <i class="bx bx-right-arrow-alt"></i>
                     </a>
@@ -863,10 +887,10 @@
 
                     <div class="hero-buttons" id="hero-buttons-about">
                         <div class="btn-whatsapp" id="btn-about-primary">
-                            <a href="#" class="btn-primary">Prenota una visita</a>
+                            <a href="https://wa.me/+393281285060" class="btn-primary">Prenota una visita</a>
                         </div>
                         <div class="btn-secondary" id="btn-about-secondary">
-                            <a href="#">Scopri le patologie trattate</a>
+                            <a href="https://www.osteofisiorehab.it/#patologie">Scopri le patologie trattate</a>
                             <i class="bx bx-down-arrow-alt"></i>
                         </div>
 
@@ -906,7 +930,7 @@
                 <div class="conditions-grid">
 
                     <!-- Cervicale -->
-                    <a href="/cervicale" class="condition-card">
+                    <a href="cervicale" class="condition-card">
 
                         <div class="condition-image">
                             <img src="images/cervicalgia.avif"
@@ -930,7 +954,7 @@
                     </a>
 
                     <!-- Post operatorio -->
-                    <a href="/riabilitazione-post-operatoria" class="condition-card">
+                    <a href="riabilitazione-post-operatoria" class="condition-card">
 
                         <div class="condition-image">
                             <img src="images/riabilitazione-post-operatoria.avif"
@@ -955,7 +979,7 @@
                     </a>
 
                     <!-- Sport -->
-                    <a href="/fisioterapia-recupero-sportivo" class="condition-card">
+                    <a href="fisioterapia-e-recupero-sportivo" class="condition-card">
 
                         <div class="condition-image">
                             <img src="images/fisioterapia-e-recupero-sportivo-500px.avif"
@@ -980,10 +1004,10 @@
                     </a>
 
                     <!-- Lombalgia -->
-                    <a href="/lombalgia-mal-di-schiena" class="condition-card">
+                    <a href="lombalgia-e-mal-di-schiena" class="condition-card">
 
                         <div class="condition-image">
-                            <img src="images/lombalgia-mal-di-schiena.avif"
+                            <img src="imageslombalgia-e-mal-di-schiena.avif"
                                 alt="Dolore lombare e tensione muscolare nella parte inferiore della schiena."
                                 loading="lazy" decoding="async">
                         </div>
@@ -1030,7 +1054,7 @@
 
                     <article class="featured-article">
 
-                        <a href="scoliosi.html" class="featured-image">
+                        <a href="scoliosi" class="featured-image">
                             <img src="images/scoliosi.avif"
                                 alt="Scoliosi: cause, sintomi e trattamenti fisioterapici per la salute della schiena"
                                 loading="lazy" decoding="async">
@@ -1058,7 +1082,7 @@
                                 avere la fisioterapia nella gestione e nel controllo della curva.
                             </p>
 
-                            <a href="scoliosi.html" class="article-link">
+                            <a href="scoliosi" class="article-link">
                                 <span class="condition-link">
                                     <span>Leggi l'articolo</span>
                                     <i class="bx bx-right-arrow-alt"></i>
@@ -1071,7 +1095,7 @@
 
                     <article class="featured-article">
 
-                        <a href="pubalgia.html" class="featured-image">
+                        <a href="pubalgia" class="featured-image">
                             <img src="images/pubalgia.avif"
                                 alt="Pubalgia: sintomi, cause e trattamenti fisioterapici per il dolore inguinale"
                                 loading="lazy" decoding="async">
@@ -1099,7 +1123,7 @@
                                 di recupero e come la fisioterapia può aiutarti.
                             </p>
 
-                            <a href="pubalgia.html" class="article-link">
+                            <a href="pubalgia" class="article-link">
                                 <span class="condition-link">
                                     <span>Leggi l'articolo</span>
                                     <i class="bx bx-right-arrow-alt"></i>
@@ -1112,7 +1136,7 @@
 
                     <article class="featured-article">
 
-                        <a href="distorsione-alla-caviglia.a" class="featured-image">
+                        <a href="distorsione-alla-caviglia" class="featured-image">
                             <img src="images/distorsione-caviglia.avif"
                                 alt="Distorsione alla caviglia: sintomi, trattamento e recupero della mobilità."
                                 loading="lazy" decoding="async">
@@ -1140,7 +1164,7 @@
                                 fisioterapia può aiutarti a ritrovare stabilità e movimento.
                             </p>
 
-                            <a href="distorsione-alla-caviglia.html" class="article-link">
+                            <a href="distorsione-alla-caviglia" class="article-link">
                                 <span class="condition-link">
                                     <span>Leggi l'articolo</span>
                                     <i class="bx bx-right-arrow-alt"></i>
@@ -1159,7 +1183,7 @@
             <div class="process-footer">
 
                 <div class="btn-whatsapp" id="btn-whatsapp-nav">
-                    <a href="#" class="btn-primary">Vai al blog</a>
+                    <a href="blog" class="btn-primary">Vai al blog</a>
                     <i class="bx bx-right-arrow-alt"></i>
 
                 </div>
@@ -1184,30 +1208,17 @@
                         Scrivimi su WhatsApp o chiamami direttamente.
                     </p>
                 </div>
-                <!-- 
-            <div class="final-action-buttons">
 
-                <a href="https://wa.me/393XXXXXXXXX?text=Ciao%2C%20vorrei%20prenotare%20una%20valutazione."
-                    class="final-action-primary" target="_blank" rel="noopener">
-                    Prenota una valutazione su WhatsApp
-                    <span>→</span>
-                </a>
-
-                <a href="tel:+393XXXXXXXXX" class="final-action-secondary">
-                    Oppure chiamaci
-                </a>
-
-            </div> -->
                 <div class="hero-buttons">
                     <div class="btn-whatsapp">
                         <i class="bx bxl-whatsapp"></i>
-                        <a href="#" class="btn-primary">Prenota su whatsapp</a>
+                        <a href="https://wa.me/+39328128506" class="btn-primary">Prenota su whatsapp</a>
                     </div>
 
                     <div class="btn-secondary">
                         <i class="bx bxs-phone-call"></i>
 
-                        <a href="#">Chiama ora</a>
+                        <a href="tel:+393281285060">Chiama ora</a>
                     </div>
                 </div>
 
@@ -1232,27 +1243,27 @@
 
                     <nav class="rehab-footer-links">
 
-                        <a href="/">
+                        <a href="https://www.osteofisiorehab.it/">
                             Home
                         </a>
 
-                        <a href="/chi-sono">
+                        <a href="chi-sono">
                             Chi sono
                         </a>
 
-                        <a href="/#patologie">
+                        <a href="https://www.osteofisiorehab.it/#patologie">
                             Patologie
                         </a>
 
-                        <a href="/#recensioni">
+                        <a href="https://www.osteofisiorehab.it/#recensioni">
                             Recensioni
                         </a>
 
-                        <a href="/blog">
+                        <a href="blog">
                             Blog
                         </a>
 
-                        <a href="/contatti">
+                        <a href="contatti">
                             Contatti
                         </a>
 
@@ -1270,19 +1281,19 @@
 
                     <nav class="rehab-footer-links">
 
-                        <a href="/cervicale">
+                        <a href="cervicale">
                             Cervicale
                         </a>
 
-                        <a href="/lombalgia-mal-di-schiena">
+                        <a href="lombalgia-e-mal-di-schiena">
                             Lombalgia / mal di schiena
                         </a>
 
-                        <a href="/riabilitazione-post-operatoria">
+                        <a href="riabilitazione-post-operatoria">
                             Riabilitazione post-operatoria
                         </a>
 
-                        <a href="/fisioterapia-recupero-sportivo">
+                        <a href="fisioterapia-e-recupero-sportivo">
                             Fisioterapia e recupero sportivo
                         </a>
 
@@ -1300,25 +1311,17 @@
 
                     <nav class="rehab-footer-links rehab-footer-blog-links">
 
-                        <a href="/blog/mal-di-schiena-cortisolo-sonno-stress">
-                            Perché il mal di schiena peggiora:
-                            cortisolo, sonno e stress
+                        <a href="scoliosi">
+                            Che cos'è la scoliosi e come riconoscerla
                         </a>
 
-                        <a href="/blog">
-                            Legamento crociato anteriore
-                        </a>
+                        <a href="pubalgia">
+                            Pubalgia: come riconoscerla e quanto tempo serve per guarire </a>
 
-                        <a href="/blog">
-                            Riabilitazione dopo prtoesi all'anca
-                        </a>
+                        <a href="distorsione-alla-caviglia">
+                            Distorsione alla caviglia: cosa fare e come recuperare </a>
 
                     </nav>
-
-                    <!-- <a href="/blog" class="rehab-footer-more">
-                        Vai al blog
-                        <span>→</span>
-                    </a> -->
 
                 </div>
 
@@ -1335,14 +1338,14 @@
 
                         <p>
                             Tel:
-                            <a href="tel:+393XXXXXXXXX" class="footer-tel">
+                            <a href="tel:+393281285060" class="footer-tel">
                                 +39 328 128 5060
                             </a>
                         </p>
 
                         <p>
                             Email:
-                            <a href="tel:+393XXXXXXXXX">
+                            <a href="mailto: fiorentinimatteo87@gmail.com">
                                 fiorentinimatteo87@gmail.com
                             </a>
                         </p>
@@ -1367,13 +1370,13 @@
 
                 <div class="rehab-footer-legal">
 
-                    <a href="/privacy-policy">
+                    <a href="privacy-policy">
                         Privacy Policy
                     </a>
 
                     <span>·</span>
 
-                    <a href="/cookie-policy">
+                    <a href="cookie-policy">
                         Cookie Policy
                     </a>
 
