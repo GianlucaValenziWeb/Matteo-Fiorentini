@@ -50,7 +50,8 @@
 
     <!-- Preload dei Google Fonts -->
     <!-- Oswald -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
         onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap">
@@ -61,7 +62,8 @@
     <noscript>
         <link rel="stylesheet" href="styles.css">
     </noscript>
-    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     </noscript>
@@ -69,6 +71,677 @@
     <!-- Favicon -->
     <link rel="icon" href="images/logo-osteofisiorehab-dott-matteo-fiorentini-500px" type="image/x-icon">
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            list-style: none;
+            scroll-behavior: smooth;
+            font-family: 'Lexend Deca', sans-serif;
+
+            font-size: 1.1rem;
+            --color1: #383636;
+            --color2: #1F6C6A;
+            --color2: #08825f;
+            --border-radius: 15px;
+            --transition: all .3s ease;
+            color: #3f3d3d;
+        }
+
+        b {
+            font-size: inherit;
+            color: inherit;
+        }
+
+        strong {
+            font-size: inherit;
+            color: inherit;
+            letter-spacing: inherit;
+            font-weight: 600;
+        }
+
+
+
+        /* =========================================
+   NAVBAR - STRUTTURA BASE
+========================================= */
+
+        header {
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            padding: 10px 120px;
+            background: transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: #fff;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .navbar-left img {
+            display: block;
+            height: 60px;
+            width: auto;
+        }
+
+        .navbar-center {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navbar-center a {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        /* CONTATTI */
+
+        .navbar-right .btn-whatsapp,
+        .navbar-right .btn-secondary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 12px 15px;
+            border: 2px solid var(--color2);
+            border-radius: 40px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: 0.3s ease;
+        }
+
+        .navbar-right .btn-whatsapp span,
+        .navbar-right .btn-secondary span {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #fff;
+
+        }
+
+        .navbar-right .btn-secondary span {
+            color: var(--color2);
+        }
+
+        .navbar-right .btn-whatsapp {
+            color: #fff;
+            background: var(--color2);
+            gap: 1px;
+        }
+
+        .navbar-right .btn-secondary {
+            color: var(--color2);
+            background: transparent;
+            gap: 1px;
+
+        }
+
+        .navbar-right .btn-whatsapp i,
+        .navbar-right .btn-secondary i {
+            font-size: 25px;
+        }
+
+        /* HAMBURGER */
+
+        #check {
+            display: none;
+        }
+
+        .nav-toggle {
+            display: none;
+            cursor: pointer;
+            color: var(--color1);
+        }
+
+        .nav-toggle i {
+            font-size: 36px;
+        }
+
+        /* =========================================
+   DROPDOWN DESKTOP
+========================================= */
+
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .nav-dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 15px);
+            left: -15px;
+            display: flex;
+            flex-direction: column;
+            min-width: 260px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+            transition: 0.25s ease;
+            z-index: 10;
+        }
+
+        .nav-dropdown-menu a {
+            padding: 11px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .nav-dropdown-menu a:hover {
+            background: #eaf4f0;
+            color: var(--color2);
+        }
+
+        @media (min-width: 831px) {
+
+            .nav-dropdown:hover .nav-dropdown-menu,
+            .nav-dropdown:focus-within .nav-dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+
+        /* =========================================
+   MENU MOBILE - BASE
+========================================= */
+
+        .menu {
+            display: none;
+        }
+
+        /* =========================================
+   RESPONSIVE - NAVBAR
+========================================= */
+
+
+
+
+        /* =========================================
+   NAVBAR DOPO LO SCROLL
+========================================= */
+
+        .navbar.scrolled {
+            background: #ffffff;
+
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        /* =========================================
+   OPTIONAL: EFFETTO VETRO
+   puoi anche eliminarlo
+========================================= */
+
+        .navbar.scrolled {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* ========================================
+   PATHOLOGY DROPDOWN
+======================================== */
+
+        .nav-dropdown {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* Dropdown trigger */
+
+        .nav-dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+
+            white-space: nowrap;
+        }
+
+        .dropdown-chevron {
+            font-size: 16px;
+            transition: transform 0.25s ease;
+        }
+
+
+        /* Dropdown menu */
+
+        .nav-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 12px);
+            left: -16px;
+
+            width: 250px;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            /* gap: 2px; */
+
+            border-radius: 12px;
+
+            /* background: #eeeeee;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); */
+            background: #ffffff;
+            border: 1px solid #dfe7e3;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+
+            transform: translateY(8px);
+
+            transition:
+                opacity 0.2s ease,
+                transform 0.2s ease,
+                visibility 0.2s ease;
+
+            z-index: 10000;
+        }
+
+
+        /* Invisible bridge to prevent closing while hovering */
+
+        .nav-dropdown-menu::before {
+            content: "";
+
+            position: absolute;
+            top: -12px;
+            left: 0;
+
+            width: 100%;
+            height: 12px;
+        }
+
+
+        /* Dropdown links */
+
+        .nav-dropdown-menu a {
+            display: block;
+
+            padding: 10px 11px;
+
+            color: #343434;
+            font-size: 0.85rem;
+            font-weight: 600;
+            line-height: 1.4;
+
+            text-decoration: none;
+
+            border-radius: 7px;
+
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease;
+        }
+
+
+        /* Hover and keyboard interaction */
+
+        .nav-dropdown:hover .nav-dropdown-menu,
+        .nav-dropdown:focus-within .nav-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+
+            transform: translateY(0);
+        }
+
+        .nav-dropdown:hover .dropdown-chevron,
+        .nav-dropdown:focus-within .dropdown-chevron {
+            transform: rotate(180deg);
+        }
+
+        .nav-dropdown-menu a:hover,
+        .nav-dropdown-menu a:focus-visible {
+            background: #ffffff;
+            color: var(--color2);
+        }
+
+
+        /* Respect reduced-motion preferences */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .nav-dropdown-menu,
+            .dropdown-chevron {
+                transition: none;
+            }
+        }
+
+        /* HOME */
+        #home {
+            height: 100vh;
+            position: relative;
+            padding-top: 80px;
+            background-color: #f8f8f8;
+        }
+
+        .hero {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+            height: 85vh;
+            padding: 0 120px 0;
+        }
+
+        .hero-content {
+            width: 55%;
+        }
+
+        .hero-content .hero-title {
+            font-size: 2.47rem;
+            font-weight: 700 !important;
+            line-height: 1.15;
+            color: var(--color1);
+            letter-spacing: 0px;
+        }
+
+        .hero h1 {
+            font-size: 1rem;
+            color: var(--color2);
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--color2);
+            padding-left: 5px;
+        }
+
+        .hero .question {
+            font-size: 1rem;
+            color: var(--color2);
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--color2);
+            padding-left: 5px;
+        }
+
+        .highlight {
+            font-size: inherit;
+            background-color: #078b6e30;
+            background: linear-gradient(transparent 56%,
+                    rgba(9, 130, 96, 0.28) 56%,
+                    #078b6e30 91%,
+                    transparent 91%);
+            padding: 0 0.04em;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+
+        }
+
+        .hero p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color1);
+            margin: 25px 0 35px;
+            line-height: 1.4;
+            width: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+        }
+
+        .btn-secondary,
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            /* text-transform: uppercase; */
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--color2);
+            padding: 14px 28px;
+            border: 2px solid var(--color2);
+            border-radius: 40px;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--color2);
+        }
+
+        .btn-secondary a,
+        .btn-whatsapp a {
+            color: var(--color2);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .btn-whatsapp a {
+            color: #fefefe;
+        }
+
+        .btn-secondary i,
+        .btn-whatsapp i {
+            color: var(--color2);
+            margin-top: 2px;
+            margin-right: 3px;
+            font-size: 26px;
+        }
+
+        .btn-whatsapp i {
+            color: #fefefe;
+        }
+
+        .btn-secondary i {
+            margin-right: 4px;
+        }
+
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 36px;
+        }
+
+        .google-rating {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-right: 1px solid #d8ddd9;
+            padding-right: 20px;
+
+        }
+
+        .google-logo {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .google-rating-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .rating-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .rating-number {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .stars {
+            color: #f5c518;
+            font-size: 17px;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+
+        .google-reviews-link {
+            color: #555;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .google-reviews-link:hover {
+            text-decoration: underline;
+        }
+
+        .container-testimonial-avatar {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .review-avatars {
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            margin-left: -10px;
+            overflow: hidden;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+        }
+
+        .review-avatar:first-child {
+            margin-left: 0;
+        }
+
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .mini-testimonial {
+            display: flex;
+            align-items: flex-start;
+            max-width: 280px;
+        }
+
+        .quote-mark {
+            margin-right: 5px;
+            color: #078b6f;
+            font-size: 24px;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .mini-testimonial p {
+            margin: 0;
+            color: #555;
+            font-size: 13px;
+            line-height: 1.45;
+            font-style: italic;
+        }
+
+        .container-img {
+            width: 45%;
+            height: 88%;
+        }
+
+        .container-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        /* =========================================
+   RESPONSIVE - NAVBAR
+========================================= */
+
+
+
+
+
+
+        /* -------------------------------------------  BREAK -------------------------------------- */
+        .break {
+            position: relative;
+            padding: 60px 120px 0;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        .stats-overlay {
+            position: absolute;
+            inset: 0;
+        }
+
+        .stats-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 80px;
+            z-index: 2;
+        }
+
+        .stat-box {
+            flex: 1;
+            text-align: center;
+        }
+
+        .stat-box h2 {
+            color: var(--color2);
+            font-size: 2.1rem;
+            font-family: 'Lexend Deca', sans-serif;
+            letter-spacing: -1.5px;
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 600;
+            color: var(--color1);
+            margin: 10px 0 10px;
+            text-transform: uppercase;
+        }
+    </style>
 
 </head>
 
